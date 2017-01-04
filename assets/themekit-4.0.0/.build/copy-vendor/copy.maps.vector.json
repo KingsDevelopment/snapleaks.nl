@@ -1,0 +1,58 @@
+[
+	{
+		"task": "copy-vendor-maps-vector-scripts",
+		"cwd": "bower_components",
+		"src": [
+			"jvectormap/jquery-jvectormap.js",
+			"jvectormap/lib/jquery-mousewheel.js",
+			"jvectormap/src/jvectormap.js",
+			"jvectormap/src/abstract-element.js",
+			"jvectormap/src/abstract-canvas-element.js",
+			"jvectormap/src/abstract-shape-element.js",
+			"jvectormap/src/svg-element.js",
+			"jvectormap/src/svg-group-element.js",
+			"jvectormap/src/svg-canvas-element.js",
+			"jvectormap/src/svg-shape-element.js",
+			"jvectormap/src/svg-path-element.js",
+			"jvectormap/src/svg-circle-element.js",
+			"jvectormap/src/svg-image-element.js",
+			"jvectormap/src/svg-text-element.js",
+			"jvectormap/src/vml-element.js",
+			"jvectormap/src/vml-group-element.js",
+			"jvectormap/src/vml-canvas-element.js",
+			"jvectormap/src/vml-shape-element.js",
+			"jvectormap/src/vml-path-element.js",
+			"jvectormap/src/vml-circle-element.js",
+			"jvectormap/src/vector-canvas.js",
+			"jvectormap/src/simple-scale.js",
+			"jvectormap/src/ordinal-scale.js",
+			"jvectormap/src/numeric-scale.js",
+			"jvectormap/src/color-scale.js",
+			"jvectormap/src/legend.js",
+			"jvectormap/src/data-series.js",
+			"jvectormap/src/proj.js",
+			"jvectormap/src/map-object.js",
+			"jvectormap/src/region.js",
+			"jvectormap/src/marker.js",
+			"jvectormap/src/map.js"
+		],
+		"dest": "js/vendor/maps/vector",
+		"flatten": true,
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl"
+		]
+	},
+	{
+		"task": "vector-map-data",
+		"cwd": "src/js/themes/map",
+		"src": "*.json",
+		"dest": "js/data/vector_maps",
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl"
+		]
+	}
+]

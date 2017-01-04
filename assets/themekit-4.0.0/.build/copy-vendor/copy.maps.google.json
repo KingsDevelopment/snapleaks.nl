@@ -1,0 +1,90 @@
+[
+	{
+		"task": "jquery-ui-map",
+		"cwd": "bower_components/jquery-ui-map/ui",
+		"src": "*",
+		"dest": "js/vendor/maps/google/jquery-ui-map/ui",
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl",
+			"real-estate",
+			"social-1",
+			"social-2",
+			"social-3",
+			"social-1-rtl",
+			"social-2-rtl",
+			"social-3-rtl"
+		]
+	},
+	{
+		"task": "jquery-ui-map-data",
+		"cwd": "bower_components/jquery-ui-map/demos/json",
+		"src": "demo.json",
+		"dest": "js/data/google_maps",
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl"
+		]
+	},
+	{
+		"task": "jquery-ui-map-markerclusterer",
+		"cwd": "bower_components/jquery-ui-map/demos/js/markerclustererplus-2.0.6",
+		"src": ["*.js"],
+		"dest": "js/vendor/maps/google/jquery-ui-map/addons",
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl",
+			"real-estate",
+			"social-1",
+			"social-2",
+			"social-3",
+			"social-1-rtl",
+			"social-2-rtl",
+			"social-3-rtl"
+		]
+	},
+	{
+		"task": "gmaps-infobox",
+		"cwd": "bower_components/gmaps-infobox/1.1.13/src",
+		"src": ["*.js"],
+		"dest": "js/vendor/maps/google/jquery-ui-map/addons",
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl",
+			"real-estate",
+			"social-1",
+			"social-2",
+			"social-3",
+			"social-1-rtl",
+			"social-2-rtl",
+			"social-3-rtl"
+		]
+	},
+	{
+		"task": "lib-maps-images",
+		"cwd": "lib/maps/images",
+		"src": ["**/*"],
+		"dest": "images",
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl",
+			"real-estate"
+		]
+	},
+	{
+		"task": "lib-maps-data",
+		"cwd": "lib/maps/js/google/data",
+		"src": "*.json",
+		"dest": "js/data/google_maps",
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl"
+		]
+	}
+]

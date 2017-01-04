@@ -1,0 +1,5 @@
+<div id="map-themes" class="maps-google-fs" data-style="blue-gray" data-toggle="google-maps" data-file="js/data/google_maps/markers.json" data-zoom-position="TOP_RIGHT"></div>
+
+{% include "lib/maps/html/_map_templates.html" %}
+
+<div class="map-overlay-sidebar absolute top {% if rtl %}right{% else %}left{% endif %} bottom overflow-hidden" data-target="#map-themes" data-toggle="map-style-switch"></div>

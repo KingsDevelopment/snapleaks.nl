@@ -1,0 +1,12 @@
+{% include "lib/layout/html/_header.html" { htmlClass: 'ls-top-navbar show-sidebar sidebar-r1 sidebar-l2' } %}
+{% include "src/html/themes/admin/_navbar.html" %}
+{% include "src/html/themes/admin/_sidebar.html" { sidebarOptions: "right sidebar-size-1 sidebar-mini sidebar-offset-0 sidebar-skin-blue sidebar-visible-desktop sidebar-visible-mobile", sidebarData: "data-type=dropdown" } %}
+{% include "src/html/themes/admin/_sidebar.html" { sidebarId: 2, sidebarOptions: "left sidebar-size-2 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop", sidebarData: "data-type=collapse" } %}
+
+<div id="content">
+    <div class="container-fluid">
+        {% include "lib/layout/html/samples/_layouts.html" { fixed: false } %}
+    </div>
+</div>
+
+{% include "lib/layout/html/_footer_scripts.html" %}

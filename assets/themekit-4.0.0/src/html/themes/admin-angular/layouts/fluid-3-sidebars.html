@@ -1,0 +1,10 @@
+{% include "src/html/themes/admin-angular/_navbar.html" %}
+{% include "src/html/themes/admin-angular/_sidebar.html" { sidebarOptions: "left sidebar-size-1 sidebar-mini sidebar-offset-0 sidebar-skin-dark sidebar-visible-mobile sidebar-visible-desktop", sidebarData: "data-type=dropdown" } %}
+{% include "src/html/themes/admin-angular/_sidebar.html" { sidebarId: 2, sidebarOptions: "right sidebar-size-1 sidebar-mini sidebar-offset-2 sidebar-skin-white sidebar-visible-desktop", sidebarData: "data-type=dropdown" } %}
+{% include "src/html/themes/admin-angular/_sidebar.html" { sidebarId: 3, sidebarOptions: "right sidebar-size-2 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop", sidebarData: "data-type=dropdown" } %}
+
+<div id="content">
+    <div class="container-fluid">
+        {% include "lib/layout/html/samples/_layouts.html" { fixed: false } %}
+    </div>
+</div>

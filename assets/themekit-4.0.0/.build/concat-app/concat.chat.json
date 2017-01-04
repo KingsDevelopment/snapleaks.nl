@@ -1,0 +1,10 @@
+{
+	"build": "js/app/chat.js",
+	"cwd": "lib/chat/js/",
+	"files": [
+		"_breakpoints.js",
+		"_search.js",
+		"_windows.js",
+		"_toggle.js"
+	]
+}

@@ -1,0 +1,1000 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#sidebar-menu" data-toggle="sidebar-menu" data-effect="st-effect-3" class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+      <a ng-hide="$state.includes('layouts')" href="#sidebar-chat" data-toggle="sidebar-menu" class="toggle pull-right"><i class="fa fa-comments"></i></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a ui-sref="pages.dashboard" class="navbar-brand hidden-xs navbar-brand-primary">ThemeKit</a>
+    </div>
+    <div class="navbar-collapse collapse" id="collapse">
+      <form class="navbar-form navbar-left hidden-xs" role="search">
+        <div class="search-2">
+          <div class="input-group">
+            <input type="text" class="form-control form-control-w-150" placeholder="Search ..">
+            <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+        </span>
+          </div>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- notifications -->
+        <li class="dropdown notifications updates hidden-xs hidden-sm">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bell-o"></i>
+            <span class="badge badge-primary">4</span>
+          </a>
+          <ul class="dropdown-menu" role="notification">
+            <li class="dropdown-header">Notifications</li>
+            <li class="media">
+              <div class="pull-right">
+                <span class="label label-success">New</span>
+              </div>
+              <div class="media-left">
+                <img src="images/people/50/guy-2.jpg" alt="people" class="img-circle" width="30">
+              </div>
+              <div class="media-body">
+                <a href="#">Adrian D.</a> posted <a href="#">a photo</a> on his timeline.
+                <br/>
+                <span class="text-caption text-muted">5 mins ago</span>
+              </div>
+            </li>
+            <li class="media">
+              <div class="pull-right">
+                <span class="label label-success">New</span>
+              </div>
+              <div class="media-left">
+                <img src="images/people/50/guy-6.jpg" alt="people" class="img-circle" width="30">
+              </div>
+              <div class="media-body">
+                <a href="#">Bill</a> posted <a href="#">a comment</a> on Adrian's recent <a href="#">post</a>.
+                <br/>
+                <span class="text-caption text-muted">3 hrs ago</span>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <span class="icon-block s30 bg-grey-200"><i class="fa fa-plus"></i></span>
+              </div>
+              <div class="media-body">
+                <a href="#">Mary D.</a> and <a href="#">Michelle</a> are now friends.
+                <p>
+                  <span class="text-caption text-muted">1 day ago</span>
+                </p>
+                <a href="">
+                  <img class="width-30 img-circle" src="images/people/50/woman-6.jpg" alt="people">
+                </a>
+                <a href="">
+                  <img class="width-30 img-circle" src="images/people/50/woman-3.jpg" alt="people">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- // END notifications -->
+        <!-- messages -->
+        <li class="dropdown notifications hidden-xs hidden-sm">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-envelope-o"></i>
+
+          </a>
+          <ul class="dropdown-menu">
+            <li class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object thumb" src="images/people/50/guy-2.jpg" alt="people">
+                </a>
+              </div>
+              <div class="media-body">
+                <div class="pull-right">
+                  <span class="label label-default">5 min</span>
+                </div>
+                <h5 class="media-heading">Adrian D.</h5>
+
+                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object thumb" src="images/people/50/woman-7.jpg" alt="people">
+                </a>
+              </div>
+
+              <div class="media-body">
+                <div class="pull-right">
+                  <span class="label label-default">2 days</span>
+                </div>
+                <h5 class="media-heading">Jane B.</h5>
+                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object thumb" src="images/people/50/guy-8.jpg" alt="people">
+                </a>
+              </div>
+
+              <div class="media-body">
+                <div class="pull-right">
+                  <span class="label label-default">3 days</span>
+                </div>
+                <h5 class="media-heading">Andrew M.</h5>
+                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- // END messages -->
+        <!-- user -->
+        <li class="dropdown user">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fa fa-wrench"></i>Settings</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+          </ul>
+        </li>
+        <!-- // END user -->
+        <!-- country flags -->
+        <li class="dropdown flags">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="images/flags/Flag_of_the_United_States.svg" alt="United States" />
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu min-width-none" role="menu">
+            <li class="active text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_the_United_States.svg" alt="United States" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_France.svg" alt="France" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_Germany.svg" alt="Germany" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_Romania.svg" alt="Romania" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_Poland.svg" alt="Poland" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- // END country flags -->
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="sidebar left sidebar-size-1 sidebar-mini sidebar-offset-0 sidebar-skin-dark sidebar-visible-mobile sidebar-visible-desktop" data-type=dropdown>
+  <div class="split-vertical">
+    <div class="sidebar-block tabbable tabs-icons">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#sidebar-tabs-menu" data-toggle="tab"><i class="fa fa-bars"></i></a></li>
+        <li><a href="#sidebar-tabs-2" data-toggle="tab"><i class="fa fa-bar-chart-o"></i></a></li>
+      </ul>
+    </div>
+    <div class="split-vertical-body">
+      <div class="split-vertical-cell">
+        <div class="tab-content">
+
+          <div class="tab-pane active" id="sidebar-tabs-menu">
+            <div data-scrollable>
+
+              <ul class="sidebar-menu sm-icons-right sm-icons-block">
+                <li ui-sref-active="active"><a ui-sref="pages.dashboard"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.email"><i class="fa fa-envelope"></i> <span>Email</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.chat"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
+              </ul>
+
+              <h4 class="category">Components</h4>
+              <ul class="sidebar-menu sm-bordered sm-active-item-bg">
+                <li class="hasSubmenu text-multiple" ng-class="{ 'open active': $state.includes('essentials') }">
+                  <a href="#components">
+                    <i class="fa fa-circle-o"></i>
+                    <span class="text">
+                                            <span class="title">Essentials</span>
+                    <span class="details">UI Kit</span>
+                    </span>
+                  </a>
+                  <ul id="components" ng-class="{ 'in': $state.includes('essentials') }">
+                    <li ui-sref-active="active"><a ui-sref="essentials.overview"><i class="fa fa-circle-o"></i> <span>Overview</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.buttons"><i class="fa fa-th"></i> <span>Buttons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.icons"><i class="fa fa-paint-brush"></i> <span>Icons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.expandable"><i class="fa fa-ellipsis-h"></i> <span>Expandable</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.ribbons"><i class="fa fa-circle-o"></i> <span>Ribbons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.forms"><i class="fa fa-sliders"></i> <span>Forms</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.wizards"><i class="fa fa-magic"></i> <span>Wizards</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tabs"><i class="md md-tab-unselected"></i> <span>Tabs</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.nestable"><i class="md md-menu"></i> <span>Nestable</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tree"><i class="md md-loupe"></i> <span>Tree View</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.modals"><i class="fa fa-circle-o"></i> <span>Modals</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tables"><i class="fa fa-table"></i> <span>Tables</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.progress"><i class="fa fa-tasks"></i> <span>Progress</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.grid"><i class="fa fa-columns"></i> <span>Grid</span></a></li>
+                  </ul>
+                </li>
+                <li ng-class="{ 'active': $state.includes('layouts') }">
+                  <a ui-sref="layouts.fluid-1-sidebar"><i class="md md-tab-unselected"></i> <span>Layouts</span></a>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('media') }">
+                  <a href="#submenu-media"><i class="fa fa-photo"></i> <span>Media</span></a>
+                  <ul id="submenu-media" ng-class="{ 'in': $state.includes('media') }">
+                    <li ui-sref-active="active"><a ui-sref="media.gallery"><i class="fa fa-camera"></i> <span>Gallery</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="media.carousel"><i class="fa fa-circle-o"></i> <span>Carousels</span></a></li>
+                  </ul>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('maps') }">
+                  <a href="#nav-maps"><i class="fa fa-globe"></i> <span>Maps</span></a>
+                  <ul id="nav-maps" ng-class="{ 'in': $state.includes('maps') }">
+                    <li ui-sref-active="active"><a ui-sref="maps.google-themes"><i class="fa fa-eyedropper"></i> <span>Themes</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-filters"><i class="fa fa-map-marker"></i> <span>Filters</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-json"><i class="fa fa-map-marker"></i> <span>JSON</span></a></li>
+                    <li ng-class="{ 'active': $state.includes('maps.google-pagination') }"><a ui-sref="maps.google-pagination"><i class="fa fa-map-marker"></i> <span>Pagination</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-edit"><i class="fa fa-pencil"></i> <span>Edit</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-markers"><i class="fa fa-map-marker"></i> <span>Markers</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.vector"><i class="fa fa-map-marker"></i> <span>Vector Maps</span></a></li>
+                  </ul>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('charts') }">
+                  <a href="#nav-charts"><i class="fa fa-bar-chart"></i> <span>Charts</span></a>
+                  <ul id="nav-charts" ng-class="{ 'in': $state.includes('charts') }">
+                    <li ui-sref-active="active"><a ui-sref="charts.morris"><i class="fa fa-bar-chart"></i> <span>Morris</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="charts.flot"><i class="fa fa-bar-chart"></i> <span>Flot</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h4 class="category">Other</h4>
+              <ul class="sidebar-menu sm-bordered sm-active-item-bg">
+                <li ui-sref-active="active"><a ui-sref="pages.tickets"><i class="fa fa-ticket"></i> <span>Tickets</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.appointments"><i class="fa fa-calendar"></i> <span>Appointments</span></a></li>
+              </ul>
+
+              <div class="sidebar-block equal-padding">
+                <ul class="list-group list-group-menu">
+                  <li class="list-group-item"><a ui-sref="pages.login"><i class="fa fa-fw fa-lock"></i> <span>Login</span></a></li>
+                  <li class="list-group-item"><a ui-sref="pages.sign-up"><i class="fa fa-fw fa-pencil"></i> <span>Sign Up</span></a></li>
+                </ul>
+              </div>
+
+              <h4 class="category">Versions</h4>
+              <div class="sidebar-block equal-padding text-center">
+                <a class="btn btn-primary btn-block" href="../admin/index.html">
+                  <strong>HTML</strong>
+                </a>
+                <a class="btn btn-primary btn-block" ui-sref="pages.dashboard">
+                  <strong>AngularJS</strong>
+                </a>
+                <a class="btn btn-primary btn-block" href="../admin-rtl/index.html">
+                  <strong>RTL</strong>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!-- // END .tab-pane -->
+
+          <div class="tab-pane" id="sidebar-tabs-2">
+            <div data-scrollable>
+
+              <div class="category">Activity</div>
+              <div class="sidebar-block">
+                <div class="sidebar-feed">
+                  <ul>
+                    <li class="media news-item">
+                      <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just added <a href="" class="text-white">mosaicpro</a> as their office
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--End user-->
+
+              <div class="sidebar-block equal-padding">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Calendar -->
+              <div class="category">Calendar</div>
+              <div class="sidebar-block padding-none">
+                <div class="datepicker"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- // END .tab-content -->
+
+      </div>
+      <!-- // END .split-vertical-cell -->
+
+    </div>
+    <!-- // END .split-vertical-body -->
+
+    <ul class="sidebar-menu sm-active-item-bg sm-icons-right sm-icons-block">
+      <li><a href="../../../index.html"><i class="fa fa-eyedropper"></i> <span>Themes</span></a></li>
+    </ul>
+
+  </div>
+</div>
+<div class="sidebar right sidebar-size-1 sidebar-mini sidebar-offset-2 sidebar-skin-white sidebar-visible-desktop" data-type=dropdown>
+  <div class="split-vertical">
+    <div class="sidebar-block tabbable tabs-icons">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#sidebar-tabs-menu2" data-toggle="tab"><i class="fa fa-bars"></i></a></li>
+        <li><a href="#sidebar-tabs-22" data-toggle="tab"><i class="fa fa-bar-chart-o"></i></a></li>
+      </ul>
+    </div>
+    <div class="split-vertical-body">
+      <div class="split-vertical-cell">
+        <div class="tab-content">
+
+          <div class="tab-pane active" id="sidebar-tabs-menu2">
+            <div data-scrollable>
+
+              <ul class="sidebar-menu sm-icons-block">
+                <li ui-sref-active="active"><a ui-sref="pages.dashboard"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.email"><i class="fa fa-envelope"></i> <span>Email</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.chat"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
+              </ul>
+
+              <h4 class="category">Components</h4>
+              <ul class="sidebar-menu sm-bordered sm-active-item-bg">
+                <li class="hasSubmenu text-multiple" ng-class="{ 'open active': $state.includes('essentials') }">
+                  <a href="#components2">
+                    <i class="fa fa-circle-o"></i>
+                    <span class="text">
+                                            <span class="title">Essentials</span>
+                    <span class="details">UI Kit</span>
+                    </span>
+                  </a>
+                  <ul id="components2" ng-class="{ 'in': $state.includes('essentials') }">
+                    <li ui-sref-active="active"><a ui-sref="essentials.overview"><i class="fa fa-circle-o"></i> <span>Overview</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.buttons"><i class="fa fa-th"></i> <span>Buttons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.icons"><i class="fa fa-paint-brush"></i> <span>Icons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.expandable"><i class="fa fa-ellipsis-h"></i> <span>Expandable</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.ribbons"><i class="fa fa-circle-o"></i> <span>Ribbons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.forms"><i class="fa fa-sliders"></i> <span>Forms</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.wizards"><i class="fa fa-magic"></i> <span>Wizards</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tabs"><i class="md md-tab-unselected"></i> <span>Tabs</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.nestable"><i class="md md-menu"></i> <span>Nestable</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tree"><i class="md md-loupe"></i> <span>Tree View</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.modals"><i class="fa fa-circle-o"></i> <span>Modals</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tables"><i class="fa fa-table"></i> <span>Tables</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.progress"><i class="fa fa-tasks"></i> <span>Progress</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.grid"><i class="fa fa-columns"></i> <span>Grid</span></a></li>
+                  </ul>
+                </li>
+                <li ng-class="{ 'active': $state.includes('layouts') }">
+                  <a ui-sref="layouts.fluid-1-sidebar"><i class="md md-tab-unselected"></i> <span>Layouts</span></a>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('media') }">
+                  <a href="#submenu-media2"><i class="fa fa-photo"></i> <span>Media</span></a>
+                  <ul id="submenu-media2" ng-class="{ 'in': $state.includes('media') }">
+                    <li ui-sref-active="active"><a ui-sref="media.gallery"><i class="fa fa-camera"></i> <span>Gallery</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="media.carousel"><i class="fa fa-circle-o"></i> <span>Carousels</span></a></li>
+                  </ul>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('maps') }">
+                  <a href="#nav-maps2"><i class="fa fa-globe"></i> <span>Maps</span></a>
+                  <ul id="nav-maps2" ng-class="{ 'in': $state.includes('maps') }">
+                    <li ui-sref-active="active"><a ui-sref="maps.google-themes"><i class="fa fa-eyedropper"></i> <span>Themes</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-filters"><i class="fa fa-map-marker"></i> <span>Filters</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-json"><i class="fa fa-map-marker"></i> <span>JSON</span></a></li>
+                    <li ng-class="{ 'active': $state.includes('maps.google-pagination') }"><a ui-sref="maps.google-pagination"><i class="fa fa-map-marker"></i> <span>Pagination</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-edit"><i class="fa fa-pencil"></i> <span>Edit</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-markers"><i class="fa fa-map-marker"></i> <span>Markers</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.vector"><i class="fa fa-map-marker"></i> <span>Vector Maps</span></a></li>
+                  </ul>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('charts') }">
+                  <a href="#nav-charts2"><i class="fa fa-bar-chart"></i> <span>Charts</span></a>
+                  <ul id="nav-charts2" ng-class="{ 'in': $state.includes('charts') }">
+                    <li ui-sref-active="active"><a ui-sref="charts.morris"><i class="fa fa-bar-chart"></i> <span>Morris</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="charts.flot"><i class="fa fa-bar-chart"></i> <span>Flot</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h4 class="category">Other</h4>
+              <ul class="sidebar-menu sm-bordered sm-active-item-bg">
+                <li ui-sref-active="active"><a ui-sref="pages.tickets"><i class="fa fa-ticket"></i> <span>Tickets</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.appointments"><i class="fa fa-calendar"></i> <span>Appointments</span></a></li>
+              </ul>
+
+              <div class="sidebar-block equal-padding">
+                <ul class="list-group list-group-menu">
+                  <li class="list-group-item"><a ui-sref="pages.login"><i class="fa fa-fw fa-lock"></i> <span>Login</span></a></li>
+                  <li class="list-group-item"><a ui-sref="pages.sign-up"><i class="fa fa-fw fa-pencil"></i> <span>Sign Up</span></a></li>
+                </ul>
+              </div>
+
+              <h4 class="category">Versions</h4>
+              <div class="sidebar-block equal-padding text-center">
+                <a class="btn btn-primary btn-block" href="../admin/index.html">
+                  <strong>HTML</strong>
+                </a>
+                <a class="btn btn-primary btn-block" ui-sref="pages.dashboard">
+                  <strong>AngularJS</strong>
+                </a>
+                <a class="btn btn-primary btn-block" href="../admin-rtl/index.html">
+                  <strong>RTL</strong>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!-- // END .tab-pane -->
+
+          <div class="tab-pane" id="sidebar-tabs-22">
+            <div data-scrollable>
+
+              <div class="category">Activity</div>
+              <div class="sidebar-block">
+                <div class="sidebar-feed">
+                  <ul>
+                    <li class="media news-item">
+                      <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just added <a href="" class="text-white">mosaicpro</a> as their office
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--End user-->
+
+              <div class="sidebar-block equal-padding">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Calendar -->
+              <div class="category">Calendar</div>
+              <div class="sidebar-block padding-none">
+                <div class="datepicker"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- // END .tab-content -->
+
+      </div>
+      <!-- // END .split-vertical-cell -->
+
+    </div>
+    <!-- // END .split-vertical-body -->
+
+    <ul class="sidebar-menu sm-active-item-bg sm-icons-right sm-icons-block">
+      <li><a href="../../../index.html"><i class="fa fa-eyedropper"></i> <span>Themes</span></a></li>
+    </ul>
+
+  </div>
+</div>
+<div class="sidebar right sidebar-size-2 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop" data-type=dropdown>
+  <div class="split-vertical">
+    <div class="sidebar-block tabbable tabs-icons">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#sidebar-tabs-menu3" data-toggle="tab"><i class="fa fa-bars"></i></a></li>
+        <li><a href="#sidebar-tabs-23" data-toggle="tab"><i class="fa fa-bar-chart-o"></i></a></li>
+      </ul>
+    </div>
+    <div class="split-vertical-body">
+      <div class="split-vertical-cell">
+        <div class="tab-content">
+
+          <div class="tab-pane active" id="sidebar-tabs-menu3">
+            <div data-scrollable>
+
+              <ul class="sidebar-menu sm-icons-block">
+                <li ui-sref-active="active"><a ui-sref="pages.dashboard"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.email"><i class="fa fa-envelope"></i> <span>Email</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.chat"><i class="fa fa-comments"></i> <span>Chat</span></a></li>
+              </ul>
+
+              <h4 class="category">Components</h4>
+              <ul class="sidebar-menu sm-bordered sm-active-item-bg">
+                <li class="hasSubmenu text-multiple" ng-class="{ 'open active': $state.includes('essentials') }">
+                  <a href="#components3">
+                    <i class="fa fa-circle-o"></i>
+                    <span class="text">
+                                            <span class="title">Essentials</span>
+                    <span class="details">UI Kit</span>
+                    </span>
+                  </a>
+                  <ul id="components3" ng-class="{ 'in': $state.includes('essentials') }">
+                    <li ui-sref-active="active"><a ui-sref="essentials.overview"><i class="fa fa-circle-o"></i> <span>Overview</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.buttons"><i class="fa fa-th"></i> <span>Buttons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.icons"><i class="fa fa-paint-brush"></i> <span>Icons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.expandable"><i class="fa fa-ellipsis-h"></i> <span>Expandable</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.ribbons"><i class="fa fa-circle-o"></i> <span>Ribbons</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.forms"><i class="fa fa-sliders"></i> <span>Forms</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.wizards"><i class="fa fa-magic"></i> <span>Wizards</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tabs"><i class="md md-tab-unselected"></i> <span>Tabs</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.nestable"><i class="md md-menu"></i> <span>Nestable</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tree"><i class="md md-loupe"></i> <span>Tree View</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.modals"><i class="fa fa-circle-o"></i> <span>Modals</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.tables"><i class="fa fa-table"></i> <span>Tables</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.progress"><i class="fa fa-tasks"></i> <span>Progress</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="essentials.grid"><i class="fa fa-columns"></i> <span>Grid</span></a></li>
+                  </ul>
+                </li>
+                <li ng-class="{ 'active': $state.includes('layouts') }">
+                  <a ui-sref="layouts.fluid-1-sidebar"><i class="md md-tab-unselected"></i> <span>Layouts</span></a>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('media') }">
+                  <a href="#submenu-media3"><i class="fa fa-photo"></i> <span>Media</span></a>
+                  <ul id="submenu-media3" ng-class="{ 'in': $state.includes('media') }">
+                    <li ui-sref-active="active"><a ui-sref="media.gallery"><i class="fa fa-camera"></i> <span>Gallery</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="media.carousel"><i class="fa fa-circle-o"></i> <span>Carousels</span></a></li>
+                  </ul>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('maps') }">
+                  <a href="#nav-maps3"><i class="fa fa-globe"></i> <span>Maps</span></a>
+                  <ul id="nav-maps3" ng-class="{ 'in': $state.includes('maps') }">
+                    <li ui-sref-active="active"><a ui-sref="maps.google-themes"><i class="fa fa-eyedropper"></i> <span>Themes</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-filters"><i class="fa fa-map-marker"></i> <span>Filters</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-json"><i class="fa fa-map-marker"></i> <span>JSON</span></a></li>
+                    <li ng-class="{ 'active': $state.includes('maps.google-pagination') }"><a ui-sref="maps.google-pagination"><i class="fa fa-map-marker"></i> <span>Pagination</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-edit"><i class="fa fa-pencil"></i> <span>Edit</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.google-markers"><i class="fa fa-map-marker"></i> <span>Markers</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="maps.vector"><i class="fa fa-map-marker"></i> <span>Vector Maps</span></a></li>
+                  </ul>
+                </li>
+                <li class="hasSubmenu" ng-class="{ 'open active': $state.includes('charts') }">
+                  <a href="#nav-charts3"><i class="fa fa-bar-chart"></i> <span>Charts</span></a>
+                  <ul id="nav-charts3" ng-class="{ 'in': $state.includes('charts') }">
+                    <li ui-sref-active="active"><a ui-sref="charts.morris"><i class="fa fa-bar-chart"></i> <span>Morris</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="charts.flot"><i class="fa fa-bar-chart"></i> <span>Flot</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <h4 class="category">Other</h4>
+              <ul class="sidebar-menu sm-bordered sm-active-item-bg">
+                <li ui-sref-active="active"><a ui-sref="pages.tickets"><i class="fa fa-ticket"></i> <span>Tickets</span></a></li>
+                <li ui-sref-active="active"><a ui-sref="pages.appointments"><i class="fa fa-calendar"></i> <span>Appointments</span></a></li>
+              </ul>
+
+              <div class="sidebar-block equal-padding">
+                <ul class="list-group list-group-menu">
+                  <li class="list-group-item"><a ui-sref="pages.login"><i class="fa fa-fw fa-lock"></i> <span>Login</span></a></li>
+                  <li class="list-group-item"><a ui-sref="pages.sign-up"><i class="fa fa-fw fa-pencil"></i> <span>Sign Up</span></a></li>
+                </ul>
+              </div>
+
+              <h4 class="category">Versions</h4>
+              <div class="sidebar-block equal-padding text-center">
+                <a class="btn btn-primary btn-block" href="../admin/index.html">
+                  <strong>HTML</strong>
+                </a>
+                <a class="btn btn-primary btn-block" ui-sref="pages.dashboard">
+                  <strong>AngularJS</strong>
+                </a>
+                <a class="btn btn-primary btn-block" href="../admin-rtl/index.html">
+                  <strong>RTL</strong>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <!-- // END .tab-pane -->
+
+          <div class="tab-pane" id="sidebar-tabs-23">
+            <div data-scrollable>
+
+              <div class="category">Activity</div>
+              <div class="sidebar-block">
+                <div class="sidebar-feed">
+                  <ul>
+                    <li class="media news-item">
+                      <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just added <a href="" class="text-white">mosaicpro</a> as their office
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                    <li class="media news-item">
+                      <span class="pull-left media-object">
+                                                <i class="fa fa-fw fa-bell"></i>
+                                            </span>
+                      <div class="media-body">
+                        <a href="" class="text-white">Adrian</a> just logged in
+                        <span class="time">2 min ago</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--End user-->
+
+              <div class="sidebar-block equal-padding">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                  <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fa fa-envelope"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> <i class="fa fa-lock"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option31" autocomplete="off"> <i class="fa fa-list"></i>
+                  </label>
+                  <label class="btn btn-default">
+                    <input type="radio" name="options" id="option32" autocomplete="off"> <i class="fa fa-group"></i>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Calendar -->
+              <div class="category">Calendar</div>
+              <div class="sidebar-block padding-none">
+                <div class="datepicker"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- // END .tab-content -->
+
+      </div>
+      <!-- // END .split-vertical-cell -->
+
+    </div>
+    <!-- // END .split-vertical-body -->
+
+    <ul class="sidebar-menu sm-active-item-bg sm-icons-right sm-icons-block">
+      <li><a href="../../../index.html"><i class="fa fa-eyedropper"></i> <span>Themes</span></a></li>
+    </ul>
+
+  </div>
+</div>
+
+<div id="content">
+  <div class="container-fluid">
+    <div class="jumbotron bg-transparent text-center margin-none">
+      <h1>Layout KIT</h1>
+      <p>Get full control of the layout of your pages and easily create layouts from the most simple - fluid or boxed layouts - to the most advanced layouts with up to 6 sidebars on the same page and specially crafted layouts for complex web apps.</p>
+    </div>
+
+    <div class="row" data-toggle="isotope">
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Basic Fluid Layout</h4>
+          </div>
+          <div class="panel-footer">Most simple and common fluid layouts to get started from.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/1-sidebar-left.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-1-sidebar" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">1 Sidebar</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/no-sidebar.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-no-sidebar" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">No Sidebar</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Multiple Sidebars - Fluid Layout</h4>
+          </div>
+          <div class="panel-footer">More complex examples of fluid layouts with multiple sidebars on the same page, including application layouts.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/2-sidebars.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-2-sidebars" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">2 Sidebars</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/3-sidebars.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-3-sidebars" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">3 Sidebars</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/application-layout.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.app" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Application Layout</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Sidebar Sizes</h4>
+          </div>
+          <div class="panel-footer">There are 3 predefined sidebar sizes of 56px (mini menu with icons), a sidebar of 200px (the most common) and a larger 250px sidebar size.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-1.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-1" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Sidebar Size 1 (56px)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-1-reveal.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-1-reveal" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h3">Sidebar Size 1 (56px) with Reveal</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-2.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-2" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Sidebar Size 2 (200px)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-3.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-3" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Sidebar Size 3 (250px)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-percentage.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-percentage" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h3">Percentage Sidebar Sizes (25% to 100%)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Footer Variations</h4>
+          </div>
+          <div class="panel-footer">Footer options ranging from the most simple footer with just a line of copyright notice, to sticky footers and more complex footer menus.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+
+              <a ui-sref="layouts.footer-simple">
+                    
+                        Simple Footer
+                    </a>
+            </li>
+            <li class="list-group-item">
+              Footer Menu (coming soon)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

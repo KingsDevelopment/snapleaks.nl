@@ -1,0 +1,9 @@
+{
+	"task": "music-images",
+	"cwd": "src/images/themes/music",
+	"src": ["**/*"],
+	"dest": "images",
+	"themes": [
+		"music-rtl"
+	]
+}

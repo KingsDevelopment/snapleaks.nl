@@ -1,0 +1,47 @@
+[
+	{
+		"build": "app/essentials.js",
+		"cwd": "./lib/essential/js/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/layout.js",
+		"cwd": "./lib/layout/js/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/sidebar.js",
+		"cwd": "./lib/sidebar/js/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/maps.js",
+		"cwd": "./lib/maps/js/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/charts/all.js",
+		"cwd": "./lib/charts/js/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/charts/flot.js",
+		"cwd": "./lib/charts/js/flot/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/charts/easy-pie.js",
+		"cwd": "./lib/charts/js/easy-pie/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/charts/morris.js",
+		"cwd": "./lib/charts/js/morris/",
+		"src": "main.js"
+	},
+	{
+		"build": "app/charts/sparkline.js",
+		"cwd": "./lib/charts/js/sparkline/",
+		"src": "main.js"
+	}
+]

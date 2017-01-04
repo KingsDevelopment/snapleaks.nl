@@ -1,0 +1,7 @@
+web:
+  build: .
+  ports:
+    - "80:80"
+  volumes:
+    - /apps/themekit:/app/www
+  privileged: true

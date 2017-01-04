@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2 sidebar-l1-sm sidebar-r2" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>ThemeKit</title>
+
+  <!-- Vendor CSS BUNDLE
+    Includes styling for all of the 3rd party libraries used with this module, such as Bootstrap, Font Awesome and others.
+    TIP: Using bundles will improve performance by reducing the number of network requests the client needs to make when loading the page. -->
+  <link href="css/vendor/all.css" rel="stylesheet">
+
+  <!-- Vendor CSS Standalone Libraries
+        NOTE: Some of these may have been customized (for example, Bootstrap).
+        See: src/less/themes/{theme_name}/vendor/ directory -->
+  <!-- <link href="css/vendor/bootstrap.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/font-awesome.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/picto.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/material-design-iconic-font.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/datepicker3.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/jquery.minicolors.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/bootstrap-slider.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/railscasts.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/jquery-jvectormap.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/owl.carousel.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/slick.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/morris.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/ui.fancytree.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/daterangepicker-bs3.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/jquery.bootstrap-touchspin.css" rel="stylesheet"> -->
+  <!-- <link href="css/vendor/select2.css" rel="stylesheet"> -->
+
+  <!-- APP CSS BUNDLE [css/app/app.css]
+INCLUDES:
+    - The APP CSS CORE styling required by the "music" module, also available with main.css - see below;
+    - The APP CSS STANDALONE modules required by the "music" module;
+NOTE:
+    - This bundle may NOT include ALL of the available APP CSS STANDALONE modules;
+      It was optimised to load only what is actually used by the "music" module;
+      Other APP CSS STANDALONE modules may be available in addition to what's included with this bundle.
+      See src/less/themes/music/app.less
+TIP:
+    - Using bundles will improve performance by greatly reducing the number of network requests the client needs to make when loading the page. -->
+  <link href="css/app/app.css" rel="stylesheet">
+
+  <!-- App CSS CORE
+This variant is to be used when loading the separate styling modules -->
+  <!-- <link href="css/app/main.css" rel="stylesheet"> -->
+
+  <!-- App CSS Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL modules are 100% compatible -->
+
+  <!-- <link href="css/app/essentials.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/layout.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/sidebar.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/sidebar-skins.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/navbar.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/media.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/player.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/timeline.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/cover.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/chat.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/charts.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/maps.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/colors-alerts.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/colors-background.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/colors-buttons.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/colors-calendar.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/colors-progress-bars.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/colors-text.css" rel="stylesheet" /> -->
+  <!-- <link href="css/app/ui.css" rel="stylesheet" /> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- If you don't need support for Internet Explorer <= 8 you can safely remove these -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Wrapper required for sidebar transitions -->
+  <div class="st-container">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-main navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#sidebar-menu" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#sidebar-chat" data-toggle="sidebar-menu" class="toggle pull-right visible-xs"><i class="fa fa-comments"></i></a>
+          <a class="navbar-brand" href="index.html">ThemeKit</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="nav navbar-nav">
+            <!-- Login -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-fw fa-lock"></i> Login
+              </a>
+              <div class="dropdown-menu dropdown-size-280">
+                <form>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-shield"></i></span>
+                      <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Login <i class="fa fa-sign-in"></i></button>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <!-- // END login -->
+            <!-- Sign up -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-fw fa-plus"></i> Sign Up
+              </a>
+              <div class="dropdown-menu dropdown-size-280">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group form-control-default">
+                        <label for="exampleInputFirstName">First name</label>
+                        <input type="email" class="form-control" id="exampleInputFirstName" placeholder="Your first name">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group form-control-default">
+                        <label for="exampleInputLastName">Last name</label>
+                        <input type="email" class="form-control" id="exampleInputLastName" placeholder="Your last name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-control-default required">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  </div>
+                  <div class="form-group form-control-default required">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </li>
+            <!-- // END sign up -->
+            <li><a href="../../../index.html">Themes</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right ">
+            <!-- user -->
+            <li class="dropdown user">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+                <li><a href="#"><i class="fa fa-wrench"></i>Settings</a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+              </ul>
+            </li>
+            <!-- // END user -->
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="search-2">
+              <div class="input-group">
+                <input type="text" class="form-control form-control-w-150" placeholder="Search ..">
+                <span class="input-group-btn">
+            <button class="btn btn-inverse" type="button"><i class="fa fa-search"></i></button>
+        </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- /.navbar-collapse -->
+
+      </div>
+    </div>
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+    <div class="sidebar left sidebar-size-2 sidebar-size-sm-1 sidebar-offset-0 sidebar-skin-dark sidebar-visible-desktop" id=sidebar-menu data-type=dropdown>
+      <div data-scrollable>
+        <ul class="sidebar-menu sm-active-item-bg sm-icons-block sm-icons-right">
+          <li><a href="index.html"><i class="fa fa-home"></i><span>Highlights</span></a></li>
+          <li><a href="discover.html"><i class="fa fa-music"></i><span>Discover</span></a></li>
+          <li class="active"><a href="album.html"><i class="fa fa-star"></i><span>Album</span></a></li>
+          <li><a href="player.html"><i class="fa fa-play-circle"></i><span>Players</span></a></li>
+          <li><a href="gallery.html"><i class="fa fa-photo"></i><span>Gallery</span></a></li>
+        </ul>
+        <h4 class="category">Activity</h4>
+        <div class="sidebar-block">
+          <p><i class="fa fa-fw icon-paper-document text-pink-500"></i>
+            <a href="" class="sidebar-link">
+              <strong>Caspian</strong> Announcing New Album Release Date</a>
+          </p>
+          <p><i class="fa fa-fw icon-music-note-2 text-pink-500"></i> <a href="" class="sidebar-link">Listen <strong>Bloom</strong>, the New single from Voyager</a></p>
+          <a class="btn btn-xs btn-pink-500" href="">more</a>
+        </div>
+        <h4 class="category">Top Plays</h4>
+        <div class="sidebar-block list-group list-group-menu list-group-striped">
+          <div class="list-group-item">
+            <div class="media">
+              <div class="media-left">
+                <a href="album.html">
+                  <img src="images/50/main-playing-guitar.jpg" width="35" alt="cover" class="media-object" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="text-h5 media-heading margin-v-1-2"><a href="album.html">Bloom</a></h4>
+                <p class="text-grey-500">Woodland (2011)</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item">
+            <div class="media">
+              <div class="media-left">
+                <a href="album.html">
+                  <img src="images/50/portrait-trendy-hair-style.jpg" width="35" alt="cover" class="media-object" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="text-h5 media-heading margin-v-1-2"><a href="album.html">Dreams</a></h4>
+                <p class="text-grey-500">Shinning (2014)</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item">
+            <div class="media">
+              <div class="media-left">
+                <a href="album.html">
+                  <img src="images/50/singing-woman.jpg" width="35" alt="cover" class="media-object" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="text-h5 media-heading margin-v-1-2"><a href="album.html">Something</a></h4>
+                <p class="text-grey-500">Different (2014)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+    <div class="sidebar right sidebar-size-2 sidebar-offset-0 sidebar-skin-white sidebar-visible-desktop" id=sidebar-chat>
+      <div data-scrollable>
+        <div class="sidebar-block sidebar-block-full padding-none">
+          <div class="cover overlay cover-image-full height-160">
+            <img src="images/400/fashion-beauty-portrait-sexy-girl.jpg" alt="people" />
+            <div class="overlay overlay-bg-black overlay-full">
+              <div class="v-center">
+                <h3 class="text-h3 margin-none text-overlay">Lindsay Star</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="category">About the Artist</h4>
+        <div class="sidebar-block">
+          <ul class="list-about">
+            <li><i class="fa fa-map-marker"></i> Amsterdam, NL</li>
+            <li><i class="fa fa-link"></i> <a href="#">Visit website</a></li>
+            <li><i class="fa fa-twitter"></i> <a href="#">/lindsay.star</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-block text-center equal-padding">
+          <a class="btn btn-pink-500" href="">Follow <i class="fa fa-fw fa-plus"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- sidebar effects OUTSIDE of st-pusher: -->
+    <!-- st-effect-1, st-effect-2, st-effect-4, st-effect-5, st-effect-9, st-effect-10, st-effect-11, st-effect-12, st-effect-13 -->
+
+    <!-- content push wrapper -->
+    <div class="st-pusher">
+
+      <!-- sidebar effects INSIDE of st-pusher: -->
+      <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+      <!-- this is the wrapper for the content -->
+      <div class="st-content">
+
+        <!-- extra div for emulating position:fixed of the menu -->
+        <div class="st-content-inner" id="content">
+
+          <div class="container-fluid">
+
+            <div class="row">
+              <div class="col-lg-8">
+                <div id="jquery_playlist_2" class="player playlist">
+                  <div id="jquery_playlist_2_player" class="jplayer"></div>
+                  <div class="cover overlay cover-image-full height-400 margin-none">
+                    <img src="images/400/autumn-woman-fall.jpg" alt="cover" />
+
+                    <div class="overlay overlay-full overlay-bg-black bg-transparent">
+                      <div class="v-top v-spacing-2">
+                        <h1 class="text-h1 title margin-none text-overlay" aria-label="title"></h1>
+                        <p class="lead text-overlay">Woodland (2011)</p>
+                      </div>
+                    </div>
+
+                    <!-- player -->
+                    <div class="player audio player-overlay bottom" role="application" aria-label="media player">
+                      <div class="gui-wrapper player-size-3 player-control-overlay">
+                        <div class="gui bar-single">
+                          <div class="bar bg-transparent">
+                            <div class="seek-bar seek-bar-display"></div>
+                            <div class="seek-bar">
+                              <div class="play-bar"></div>
+                              <div class="timing"><span class="duration" role="timer" aria-label="duration"></span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="gui-wrapper player-size-2 player-control-overlay">
+                        <div class="gui">
+                          <div class="play-control control">
+                            <button class="play button" role="button" aria-label="play" tabindex="0"></button>
+                          </div>
+                          <div class="bar"></div>
+                          <div class="control">
+                            <button class="mute button" role="button" tabindex="0"></button>
+                          </div>
+                          <div class="control volume">
+                            <div class="volume-bar">
+                              <div class="volume-bar-value"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="no-solution">Media Player Error
+                        <br>Update your browser or Flash plugin</div>
+                    </div>
+
+                  </div>
+                  <div class="jp-playlist" data-scrollable style="height: 206px;">
+                    <ul>
+                      <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                      <li>&nbsp;</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h4>Comments</h4>
+                <form>
+                  <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Your comment ..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button"><i class="fa fa-plus"></i></button>
+                    </span>
+                  </div>
+                </form>
+
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="">
+                          <img class="media-object" src="images/people/50/guy-2.jpg" alt="people" />
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <small class="text-grey-300 pull-right">2 minutes ago</small>
+                        <h4 class="margin-bottom-none">Andrew B.</h4>
+                        <p class="margin-none">Great album release! Definitely a purchase</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="media">
+                      <div class="media-left">
+                        <a href="">
+                          <img class="media-object" src="images/people/50/woman-5.jpg" alt="people" />
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <small class="text-grey-300 pull-right">2 hours ago</small>
+                        <h4 class="margin-bottom-none">Jane D.</h4>
+                        <p class="margin-none">Awesome album! +1</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">What's Hot</h4>
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="album.html">
+                            <img src="images/50/autumn-woman-fall.jpg" alt="cover" class="media-object" width="45" />
+                          </a>
+                        </div>
+
+                        <div class="media-body">
+                          <div class="pull-right">
+                            <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                          </div>
+                          <h4 class="media-heading margin-v-4"><a href="album.html">Bloom</a></h4>
+                          <p class="text-grey-500 margin-none">Woodland (2011)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="album.html">
+                            <img src="images/50/portrait-of-man-with-guitar.jpg" alt="cover" class="media-object" width="45" />
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="pull-right">
+                            <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                          </div>
+                          <h4 class="media-heading margin-v-4"><a href="album.html">Dreams</a></h4>
+                          <p class="text-grey-500 margin-none">Shinning (2014)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="album.html">
+                            <img src="images/50/young-couple-in-love.jpg" alt="cover" class="media-object" width="45" />
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="pull-right">
+                            <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                          </div>
+                          <h4 class="media-heading margin-v-4"><a href="album.html">Something</a></h4>
+                          <p class="text-grey-500 margin-none">Different (2014)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="media">
+                        <div class="media-left">
+                          <a href="album.html">
+                            <img src="images/50/fashion-beauty-portrait-sexy-girl.jpg" alt="cover" class="media-object" width="45" />
+                          </a>
+                        </div>
+                        <div class="media-body">
+                          <div class="pull-right">
+                            <a class="btn btn-pink-500 btn-circle btn-stroke btn-sm" href="#"><i class="fa fa-play"></i></a>
+                          </div>
+                          <h4 class="media-heading margin-v-4"><a href="album.html">Angels</a></h4>
+                          <p class="text-grey-500 margin-none">Heaven (2014)</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <h4>Discover Music</h4>
+                    <p>Build for music enthusiasts, our platform has lots of ways to help you find music you'll love and artists you'll fall in love with.</p>
+                    <a class="btn btn-primary" href="discover.html"><i class="fa fa-fw fa-search"></i> Search</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /st-content-inner -->
+
+      </div>
+      <!-- /st-content -->
+
+    </div>
+    <!-- /st-pusher -->
+
+    <div class="container-fluid">
+      <!-- Footer -->
+      <footer class="footer">
+        <strong>ThemeKit</strong> v4.0.0 &copy; Copyright 2015
+      </footer>
+      <!-- // Footer -->
+    </div>
+
+  </div>
+  <!-- Inline Script for colors and config objects; used by various external scripts; -->
+  <script>
+    var colors = {
+      "danger-color": "#e74c3c",
+      "success-color": "#81b53e",
+      "warning-color": "#f0ad4e",
+      "inverse-color": "#2c3e50",
+      "info-color": "#2d7cb5",
+      "default-color": "#6e7882",
+      "default-light-color": "#cfd9db",
+      "purple-color": "#9D8AC7",
+      "mustard-color": "#d4d171",
+      "lightred-color": "#e15258",
+      "body-bg": "#f6f6f6"
+    };
+    var config = {
+      theme: "music",
+      skins: {
+        "default": {
+          "primary-color": "#3498db"
+        }
+      }
+    };
+  </script>
+
+  <!-- Vendor Scripts Bundle
+    Includes all of the 3rd party JavaScript libraries above.
+    The bundle was generated using modern frontend development tools that are provided with the package
+    To learn more about the development process, please refer to the documentation.
+    Do not use it simultaneously with the separate bundles above. -->
+  <script src="js/vendor/all.js"></script>
+
+  <!-- Vendor Scripts Standalone Libraries -->
+  <!-- <script src="js/vendor/core/all.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery.js"></script> -->
+  <!-- <script src="js/vendor/core/bootstrap.js"></script> -->
+  <!-- <script src="js/vendor/core/breakpoints.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery.nicescroll.js"></script> -->
+  <!-- <script src="js/vendor/core/isotope.pkgd.js"></script> -->
+  <!-- <script src="js/vendor/core/packery-mode.pkgd.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery.grid-a-licious.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery.cookie.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery-ui.custom.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery.hotkeys.js"></script> -->
+  <!-- <script src="js/vendor/core/handlebars.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery.hotkeys.js"></script> -->
+  <!-- <script src="js/vendor/core/load_image.js"></script> -->
+  <!-- <script src="js/vendor/core/jquery.debouncedresize.js"></script> -->
+  <!-- <script src="js/vendor/tables/all.js"></script> -->
+  <!-- <script src="js/vendor/forms/all.js"></script> -->
+  <!-- <script src="js/vendor/media/all.js"></script> -->
+  <!-- <script src="js/vendor/player/all.js"></script> -->
+  <!-- <script src="js/vendor/charts/all.js"></script> -->
+  <!-- <script src="js/vendor/charts/flot/all.js"></script> -->
+  <!-- <script src="js/vendor/charts/easy-pie/jquery.easypiechart.js"></script> -->
+  <!-- <script src="js/vendor/charts/morris/all.js"></script> -->
+  <!-- <script src="js/vendor/charts/sparkline/all.js"></script> -->
+  <!-- <script src="js/vendor/maps/vector/all.js"></script> -->
+  <!-- <script src="js/vendor/tree/jquery.fancytree-all.js"></script> -->
+  <!-- <script src="js/vendor/nestable/jquery.nestable.js"></script> -->
+  <!-- <script src="js/vendor/angular/all.js"></script> -->
+
+  <!-- App Scripts Bundle
+    Includes Custom Application JavaScript used for the current theme/module;
+    Do not use it simultaneously with the standalone modules below. -->
+  <script src="js/app/app.js"></script>
+
+  <!-- App Scripts Standalone Modules
+    As a convenience, we provide the entire UI framework broke down in separate modules
+    Some of the standalone modules may have not been used with the current theme/module
+    but ALL the modules are 100% compatible -->
+
+  <!-- <script src="js/app/essentials.js"></script> -->
+  <!-- <script src="js/app/layout.js"></script> -->
+  <!-- <script src="js/app/sidebar.js"></script> -->
+  <!-- <script src="js/app/media.js"></script> -->
+  <!-- <script src="js/app/player.js"></script> -->
+  <!-- <script src="js/app/timeline.js"></script> -->
+  <!-- <script src="js/app/chat.js"></script> -->
+  <!-- <script src="js/app/maps.js"></script> -->
+  <!-- <script src="js/app/charts/all.js"></script> -->
+  <!-- <script src="js/app/charts/flot.js"></script> -->
+  <!-- <script src="js/app/charts/easy-pie.js"></script> -->
+  <!-- <script src="js/app/charts/morris.js"></script> -->
+  <!-- <script src="js/app/charts/sparkline.js"></script> -->
+
+</body>
+
+</html>

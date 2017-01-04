@@ -1,0 +1,5 @@
+{
+	"build": "js/app/player.js",
+	"cwd": "lib/media-player/js/",
+	"files": ["_player.js"]
+}

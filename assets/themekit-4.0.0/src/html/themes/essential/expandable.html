@@ -1,0 +1,6 @@
+{% extends "src/html/themes/essential/_layout.html" %}
+
+{% block content %}
+    {% set tpl = "lib/essential/html/essential-" + page.basename %}
+    {% include tpl %}
+{% endblock %}

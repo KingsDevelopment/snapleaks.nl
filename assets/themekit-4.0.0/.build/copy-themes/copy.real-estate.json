@@ -1,0 +1,16 @@
+[
+	{
+		"task": "lib-real-estate-images",
+		"cwd": "lib/real-estate/images",
+		"src": ["**/*"],
+		"dest": "images",
+		"themes": ["real-estate"]
+	},
+	{
+		"task": "lib-real-estate-data",
+		"cwd": "lib/real-estate/js/data",
+		"src": "*.json",
+		"dest": "js/data/google_maps",
+		"themes": ["real-estate"]
+	}
+]

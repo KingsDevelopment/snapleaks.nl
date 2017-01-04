@@ -1,0 +1,6 @@
+{% extends "lib/layout/html/samples/_layout.html" %}
+
+{% block content %}
+    {% set tpl = "lib/layout/html/samples/" + page.basename %}
+    {% include tpl %}
+{% endblock %}

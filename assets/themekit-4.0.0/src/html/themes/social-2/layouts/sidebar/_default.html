@@ -1,0 +1,32 @@
+<div class="sidebar{% if sidebarOptions %} {{sidebarOptions}}{% endif %}" id="sidebar-menu" data-type="collapse">
+    <div data-scrollable>
+        <ul class="sidebar-menu sm-icons-block sm-icons-right">
+            <li><a href="index.html"><i class="icon-chevron-left"></i> <span>ThemeKit</span></a></li>
+        </ul>
+
+        <h4 class="category">UI Components</h4>
+        <ul class="sidebar-menu">
+            <li{% if (page.slug == 'essential-buttons') %} class="active"{% endif %}><a href="essential-buttons.html"><i class="fa fa-th"></i> <span>Buttons</span></a></li>
+            <li{% if (page.slug == 'essential-icons') %} class="active"{% endif %}><a href="essential-icons.html"><i class="fa fa-paint-brush"></i> <span>Icons</span></a></li>
+            <li{% if (page.slug == 'essential-progress') %} class="active"{% endif %}><a href="essential-progress.html"><i class="fa fa-tasks"></i> <span>Progress</span></a></li>
+            <li{% if (page.slug == 'essential-grid') %} class="active"{% endif %}><a href="essential-grid.html"><i class="fa fa-columns"></i> <span>Grid</span></a></li>
+            <li{% if (page.slug == 'essential-forms') %} class="active"{% endif %}><a href="essential-forms.html"><i class="fa fa-sliders"></i> <span>Forms</span></a></li>
+            <li{% if (page.slug == 'essential-tables') %} class="active"{% endif %}><a href="essential-tables.html"><i class="fa fa-table"></i> <span>Tables</span></a></li>
+            <li{% if (page.slug == 'essential-tabs') %} class="active"{% endif %}><a href="essential-tabs.html"><i class="fa fa-circle-o"></i> <span>Tabs</span></a></li>
+
+            <!-- Sample 2 Level Collapse -->
+            <li class="hasSubmenu">
+                <a href="#submenu"><i class="fa fa-chevron-circle-down"></i> <span>Collapse</span></a>
+                <ul id="submenu">
+                    <li class="hasSubmenu">
+                        <a href="#submenu-1"><i class="fa fa-circle-o"></i> Submenu</a>
+                        <ul id="submenu-1">
+                            <li><a href="#">Regular Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Regular Link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

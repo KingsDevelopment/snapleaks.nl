@@ -1,0 +1,40 @@
+<div class="jumbotron text-center bg-transparent margin-none">
+	<h1>Media players</h1>
+	<p>Beautiful skins for <strong>jPlayer</strong>, the most popular HTML5 Audio / Video jQuery Library.</p>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">Single Audio Player</h4>
+			</div>
+			{% include "lib/media-player/html/single-audio-player.html" %}
+		</div>
+
+		{% include "lib/media-player/html/cover.html" %}
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">Single Video Player</h4>
+			</div>
+			<div class="panel-body">
+				{% include "lib/media-player/html/single-video-player.html" %}
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">Mixed Audio &amp; Video Player with Playlist</h4>
+			</div>
+			{% include "lib/media-player/html/mixed-with-playlist.html" %}
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">Audio Player with Cover and Playlist</h4>
+			</div>
+			{% include "lib/media-player/html/cover-with-playlist.html" %}
+		</div>
+	</div>
+</div>

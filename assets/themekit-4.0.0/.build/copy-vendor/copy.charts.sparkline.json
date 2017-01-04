@@ -1,0 +1,26 @@
+{
+	"task": "copy-vendor-charts-sparkline-scripts",
+	"cwd": "bower_components",
+	"src": [
+		"jquery.sparkline/src/header.js",
+		"jquery.sparkline/src/defaults.js",
+		"jquery.sparkline/src/utils.js",
+		"jquery.sparkline/src/simpledraw.js",
+		"jquery.sparkline/src/rangemap.js",
+		"jquery.sparkline/src/interact.js",
+		"jquery.sparkline/src/base.js",
+		"jquery.sparkline/src/chart-line.js",
+		"jquery.sparkline/src/chart-bar.js",
+		"jquery.sparkline/src/chart-tristate.js",
+		"jquery.sparkline/src/chart-discrete.js",
+		"jquery.sparkline/src/chart-bullet.js",
+		"jquery.sparkline/src/chart-pie.js",
+		"jquery.sparkline/src/chart-box.js",
+		"jquery.sparkline/src/vcanvas-base.js",
+		"jquery.sparkline/src/vcanvas-canvas.js",
+		"jquery.sparkline/src/vcanvas-vml.js",
+		"jquery.sparkline/src/footer.js"
+	],
+	"dest": "js/vendor/charts/sparkline",
+	"flatten": true
+}

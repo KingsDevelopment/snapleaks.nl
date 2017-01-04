@@ -1,0 +1,16 @@
+[
+	{
+		"task": "social-images",
+		"cwd": "src/images/themes/social",
+		"src": ["**/*"],
+		"dest": "images",
+		"themes": [
+			"social-1",
+			"social-2",
+			"social-3",
+			"social-1-rtl",
+			"social-2-rtl",
+			"social-3-rtl"
+		]
+	}
+]

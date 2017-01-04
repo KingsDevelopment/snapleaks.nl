@@ -1,0 +1,26 @@
+[
+	{
+		"task": "copy-vendor-player-scripts",
+		"cwd": "bower_components",
+		"src": [
+			"jplayer/dist/jplayer/jquery.jplayer.js",
+			"jplayer/dist/add-on/jplayer.playlist.js"
+		],
+		"dest": "js/vendor/player",
+		"flatten": true,
+		"themes": [
+			"music",
+			"music-rtl"
+		]
+	},
+	{
+		"task": "jplayer",
+		"cwd": "bower_components/jplayer/dist/jplayer",
+		"src": ["*.swf"],
+		"dest": "js/vendor/player/addons",
+		"themes": [
+			"music",
+			"music-rtl"
+		]
+	}
+]

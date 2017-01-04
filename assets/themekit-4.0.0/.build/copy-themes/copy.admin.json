@@ -1,0 +1,28 @@
+[
+	{
+		"task": "admin-kits-choose-images",
+		"cwd": "$ROOT_DIR",
+		"src": [
+			"lib/essential/images/choose/*",
+			"lib/layout/images/choose/*"
+		],
+		"dest": "images/choose",
+		"flatten": true,
+		"themes": [
+			"admin",
+			"admin-angular",
+			"admin-rtl"
+		]
+	},
+	{
+		"task": "admin-gallery-images",
+		"cwd": "$ROOT_DIR",
+		"src": ["src/images/themes/admin/gallery/*"],
+		"dest": "images/gallery",
+		"flatten": true,
+		"themes": [
+			"admin-angular",
+			"admin-rtl"
+		]
+	}
+]

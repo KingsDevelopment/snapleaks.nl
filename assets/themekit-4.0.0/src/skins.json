@@ -1,0 +1,193 @@
+{
+    "choose": {
+        "default": {
+            "primary-color": "#16ae9f"
+        }
+    },
+    "admin": {
+        "default": {
+            "primary-color": "#3498db"
+        }
+    },
+    "admin-angular": {
+        "default": {
+            "primary-color": "#16ae9f"
+        }
+    },
+    "admin-rtl": {
+        "default": {
+            "primary-color": "#3498db"
+        }
+    },
+    "layout": {
+        "default": {
+            "primary-color": "#16ae9f"
+        }
+    },
+    "sidebar": {
+        "default": {
+            "primary-color": "#16ae9f"
+        }
+    },
+    "navbar": {
+        "default": {
+            "primary-color": "#16ae9f"
+        }
+    },
+    "color": {
+        "default": {
+            "primary-color": "#16ae9f"
+        }
+    },
+    "essential": {
+        "default": {
+            "primary-color": "#16ae9f"
+        }
+    },
+    "music": {
+        "default": {
+            "primary-color": "#3498db"
+        }
+    },
+    "music-rtl": {
+        "default": {
+            "primary-color": "#3498db"
+        }
+    },
+    "real-estate": {
+        "default": {
+            "primary-color": "#3498db"
+        }
+    },
+    "social-1": {
+        "default": {
+            "primary-color": "#16ae9f"
+        },
+        "orange": {
+            "primary-color": "#e74c3c"
+        },
+        "blue": {
+            "primary-color": "#4687ce"
+        },
+        "purple": {
+            "primary-color": "#af86b9"
+        },
+        "brown": {
+            "primary-color": "#c3a961"
+        }
+    },
+    "social-1-rtl": {
+        "default": {
+            "primary-color": "#16ae9f"
+        },
+        "orange": {
+            "primary-color": "#e74c3c"
+        },
+        "blue": {
+            "primary-color": "#4687ce"
+        },
+        "purple": {
+            "primary-color": "#af86b9"
+        },
+        "brown": {
+            "primary-color": "#c3a961"
+        }
+    },
+    "social-2": {
+        "default": {
+            "primary-color": "#16ae9f"
+        },
+        "orange": {
+            "primary-color": "#e74c3c"
+        },
+        "blue": {
+            "primary-color": "#4687ce"
+        },
+        "purple": {
+            "primary-color": "#af86b9"
+        },
+        "brown": {
+            "primary-color": "#c3a961"
+        },
+        "default-nav-inverse": {
+            "color-block": "#242424"
+        }
+    },
+    "social-2-rtl": {
+        "default": {
+            "primary-color": "#16ae9f"
+        },
+        "orange": {
+            "primary-color": "#e74c3c"
+        },
+        "blue": {
+            "primary-color": "#4687ce"
+        },
+        "purple": {
+            "primary-color": "#af86b9"
+        },
+        "brown": {
+            "primary-color": "#c3a961"
+        },
+        "default-nav-inverse": {
+            "color-block": "#242424"
+        }
+    },
+    "social-3": {
+        "default": {
+            "primary-color": "#16ae9f"
+        },
+        "orange": {
+            "primary-color": "#e74c3c"
+        },
+        "blue": {
+            "primary-color": "#4687ce"
+        },
+        "purple": {
+            "primary-color": "#af86b9"
+        },
+        "brown": {
+            "primary-color": "#c3a961"
+        },
+        "default-nav-inverse": {
+            "color-block": "#242424"
+        }
+    },
+    "social-3-rtl": {
+        "default": {
+            "primary-color": "#16ae9f"
+        },
+        "orange": {
+            "primary-color": "#e74c3c"
+        },
+        "blue": {
+            "primary-color": "#4687ce"
+        },
+        "purple": {
+            "primary-color": "#af86b9"
+        },
+        "brown": {
+            "primary-color": "#c3a961"
+        },
+        "default-nav-inverse": {
+            "color-block": "#242424"
+        }
+    },
+    "learning": {
+        "default": {
+            "primary-color": "#16ae9f"
+        },
+        "orange": {
+            "primary-color": "#e74c3c"
+        },
+        "blue": {
+            "primary-color": "#4687ce"
+        },
+        "purple": {
+            "primary-color": "#af86b9"
+        },
+        "brown": {
+            "primary-color": "#c3a961"
+        }
+    }
+}

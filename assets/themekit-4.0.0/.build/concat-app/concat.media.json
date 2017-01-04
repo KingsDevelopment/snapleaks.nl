@@ -1,0 +1,11 @@
+{
+	"build": "js/app/media.js",
+	"cwd": "lib/media/js/",
+	"files": [
+		"_responsive-videos.js",
+		"carousel/owl/_default.js",
+		"carousel/owl/_mixed.js",
+		"carousel/owl/_preview.js",
+		"carousel/slick/_default.js"
+	]
+}

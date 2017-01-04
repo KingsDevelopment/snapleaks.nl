@@ -1,0 +1,6 @@
+{% extends "src/html/common/layouts/login_social.html" %}
+
+{% block content %}
+    {% set tpl = "src/html/common/pages/" + page.basename %}
+    {% include tpl %}
+{% endblock %}

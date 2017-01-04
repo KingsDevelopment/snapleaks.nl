@@ -1,0 +1,378 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#sidebar-menu" data-toggle="sidebar-menu" data-effect="st-effect-3" class="toggle pull-left visible-xs"><i class="fa fa-bars"></i></a>
+      <a ng-hide="$state.includes('layouts')" href="#sidebar-chat" data-toggle="sidebar-menu" class="toggle pull-right"><i class="fa fa-comments"></i></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a ui-sref="pages.dashboard" class="navbar-brand hidden-xs navbar-brand-primary">ThemeKit</a>
+    </div>
+    <div class="navbar-collapse collapse" id="collapse">
+      <form class="navbar-form navbar-left hidden-xs" role="search">
+        <div class="search-2">
+          <div class="input-group">
+            <input type="text" class="form-control form-control-w-150" placeholder="Search ..">
+            <span class="input-group-btn">
+            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+        </span>
+          </div>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- notifications -->
+        <li class="dropdown notifications updates hidden-xs hidden-sm">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-bell-o"></i>
+            <span class="badge badge-primary">4</span>
+          </a>
+          <ul class="dropdown-menu" role="notification">
+            <li class="dropdown-header">Notifications</li>
+            <li class="media">
+              <div class="pull-right">
+                <span class="label label-success">New</span>
+              </div>
+              <div class="media-left">
+                <img src="images/people/50/guy-2.jpg" alt="people" class="img-circle" width="30">
+              </div>
+              <div class="media-body">
+                <a href="#">Adrian D.</a> posted <a href="#">a photo</a> on his timeline.
+                <br/>
+                <span class="text-caption text-muted">5 mins ago</span>
+              </div>
+            </li>
+            <li class="media">
+              <div class="pull-right">
+                <span class="label label-success">New</span>
+              </div>
+              <div class="media-left">
+                <img src="images/people/50/guy-6.jpg" alt="people" class="img-circle" width="30">
+              </div>
+              <div class="media-body">
+                <a href="#">Bill</a> posted <a href="#">a comment</a> on Adrian's recent <a href="#">post</a>.
+                <br/>
+                <span class="text-caption text-muted">3 hrs ago</span>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <span class="icon-block s30 bg-grey-200"><i class="fa fa-plus"></i></span>
+              </div>
+              <div class="media-body">
+                <a href="#">Mary D.</a> and <a href="#">Michelle</a> are now friends.
+                <p>
+                  <span class="text-caption text-muted">1 day ago</span>
+                </p>
+                <a href="">
+                  <img class="width-30 img-circle" src="images/people/50/woman-6.jpg" alt="people">
+                </a>
+                <a href="">
+                  <img class="width-30 img-circle" src="images/people/50/woman-3.jpg" alt="people">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- // END notifications -->
+        <!-- messages -->
+        <li class="dropdown notifications hidden-xs hidden-sm">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-envelope-o"></i>
+
+          </a>
+          <ul class="dropdown-menu">
+            <li class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object thumb" src="images/people/50/guy-2.jpg" alt="people">
+                </a>
+              </div>
+              <div class="media-body">
+                <div class="pull-right">
+                  <span class="label label-default">5 min</span>
+                </div>
+                <h5 class="media-heading">Adrian D.</h5>
+
+                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object thumb" src="images/people/50/woman-7.jpg" alt="people">
+                </a>
+              </div>
+
+              <div class="media-body">
+                <div class="pull-right">
+                  <span class="label label-default">2 days</span>
+                </div>
+                <h5 class="media-heading">Jane B.</h5>
+                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object thumb" src="images/people/50/guy-8.jpg" alt="people">
+                </a>
+              </div>
+
+              <div class="media-body">
+                <div class="pull-right">
+                  <span class="label label-default">3 days</span>
+                </div>
+                <h5 class="media-heading">Andrew M.</h5>
+                <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- // END messages -->
+        <!-- user -->
+        <li class="dropdown user">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><i class="fa fa-user"></i>Profile</a></li>
+            <li><a href="#"><i class="fa fa-wrench"></i>Settings</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+          </ul>
+        </li>
+        <!-- // END user -->
+        <!-- country flags -->
+        <li class="dropdown flags">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="images/flags/Flag_of_the_United_States.svg" alt="United States" />
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu min-width-none" role="menu">
+            <li class="active text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_the_United_States.svg" alt="United States" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_France.svg" alt="France" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_Germany.svg" alt="Germany" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_Romania.svg" alt="Romania" />
+              </a>
+            </li>
+            <li class="text-center">
+              <a href="#">
+                <img src="images/flags/Flag_of_Poland.svg" alt="Poland" />
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- // END country flags -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="content">
+  <div class="container-fluid">
+    <div class="jumbotron bg-transparent text-center margin-none">
+      <h1>Layout KIT</h1>
+      <p>Get full control of the layout of your pages and easily create layouts from the most simple - fluid or boxed layouts - to the most advanced layouts with up to 6 sidebars on the same page and specially crafted layouts for complex web apps.</p>
+    </div>
+
+    <div class="row" data-toggle="isotope">
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Basic Fluid Layout</h4>
+          </div>
+          <div class="panel-footer">Most simple and common fluid layouts to get started from.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/1-sidebar-left.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-1-sidebar" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">1 Sidebar</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/no-sidebar.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-no-sidebar" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">No Sidebar</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Multiple Sidebars - Fluid Layout</h4>
+          </div>
+          <div class="panel-footer">More complex examples of fluid layouts with multiple sidebars on the same page, including application layouts.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/2-sidebars.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-2-sidebars" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">2 Sidebars</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/3-sidebars.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.fluid-3-sidebars" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h1">3 Sidebars</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/application-layout.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.app" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Application Layout</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Sidebar Sizes</h4>
+          </div>
+          <div class="panel-footer">There are 3 predefined sidebar sizes of 56px (mini menu with icons), a sidebar of 200px (the most common) and a larger 250px sidebar size.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-1.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-1" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Sidebar Size 1 (56px)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-1-reveal.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-1-reveal" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h3">Sidebar Size 1 (56px) with Reveal</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-2.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-2" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Sidebar Size 2 (200px)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-size-3.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-3" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h2">Sidebar Size 3 (250px)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+            <li ui-sref-active="active" class="list-group-item">
+              <div class="cover overlay hover cover-image-full">
+                <img src="images/choose/sidebar-percentage.jpg" alt="Buttons" />
+
+                <a ui-sref="layouts.sidebar-size-percentage" class="overlay overlay-full overlay-hover overlay-bg-white">
+
+                  <span class="v-center">
+                                <span class="text-h3">Percentage Sidebar Sizes (25% to 100%)</span>
+                  </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item col-lg-4 col-md-6 col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4 class="panel-title">Footer Variations</h4>
+          </div>
+          <div class="panel-footer">Footer options ranging from the most simple footer with just a line of copyright notice, to sticky footers and more complex footer menus.</div>
+          <ul class="list-group">
+            <li ui-sref-active="active" class="list-group-item">
+
+              <a ui-sref="layouts.footer-simple">
+                    
+                        Simple Footer
+                    </a>
+            </li>
+            <li class="list-group-item">
+              Footer Menu (coming soon)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <strong>ThemeKit</strong> v4.0.0 &copy; Copyright 2015
+    </footer>
+    <!-- // Footer -->
+  </div>
+</div>
