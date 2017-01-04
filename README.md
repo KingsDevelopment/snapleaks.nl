@@ -1,4 +1,4 @@
-<p align="center">![SnapLeaks.nl Logo](http://i.imgur.com/cRNkdRb.png)</p>
+<p align="center"><img src="http://i.imgur.com/cRNkdRb.png" alt="SnapLeaks.nl Logo"/></p>
 
 ## Theme
 [ThemeKit - Bootstrap Admin Theme Kit (Social 1)](https://themeforest.net/item/themekit-bootstrap-admin-theme-kit/6767145)
