@@ -1,7 +1,7 @@
 <p align="center"><img src="http://i.imgur.com/cRNkdRb.png" alt="SnapLeaks.nl Logo"/></p>
 
 ## Theme
-[ThemeKit - Bootstrap Admin Theme Kit (Social 1)](https://themeforest.net/item/themekit-bootstrap-admin-theme-kit/6767145)
+[Aruna - Retina Meme / Gag / Image Sharing Template](https://themeforest.net/item/aruna-retina-meme-gag-image-sharing-template/6113126)
 
 ## Languages
 - Frontend
