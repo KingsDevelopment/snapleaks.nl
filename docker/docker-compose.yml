@@ -13,7 +13,7 @@ services:
     environment:
       - "VIRTUAL_HOST=${LETSENCRYPT_HOST_FRONTEND}"
       - VIRTUAL_NETWORK=nginx-proxy
-      - VIRTUAL_PORT=80
+      - "VIRTUAL_HOST=${LETSENCRYPT_PORT_FRONTEND}"
       - "LETSENCRYPT_HOST=${LETSENCRYPT_HOST_FRONTEND}"
       - "LETSENCRYPT_EMAIL=${LETSENCRYPT_MAIL}"
     volumes:
@@ -22,7 +22,7 @@ services:
       - "${PATH_TO_SDK}:/project/src/app/sdk"
     networks:
       - snapleaks
-      - letsencrypt
+      - proxy-tier
 
   backend:
     container_name: snapleaks-backend
@@ -35,7 +35,7 @@ services:
     environment:
       - "VIRTUAL_HOST=${LETSENCRYPT_HOST_BACKEND}"
       - VIRTUAL_NETWORK=nginx-proxy
-      - VIRTUAL_PORT=3000
+      - "VIRTUAL_HOST=${LETSENCRYPT_PORT_BACKEND}"
       - "LETSENCRYPT_HOST=${LETSENCRYPT_HOST_BACKEND}"
       - "LETSENCRYPT_EMAIL=${LETSENCRYPT_MAIL}"
     volumes:
@@ -43,7 +43,7 @@ services:
       - "${PATH_TO_SDK}:/sdk"
     networks:
       - snapleaks
-      - letsencrypt
+      - proxy-tier
       
   mongodb:
     container_name: snapleaks-database
@@ -61,7 +61,7 @@ services:
       - snapleaks
       
 networks:
-  letsencrypt:
+  proxy-tier:
     external:
       name: nginx-proxy
   snapleaks:
