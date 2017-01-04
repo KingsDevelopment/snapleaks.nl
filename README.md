@@ -1,7 +1,7 @@
 # snapleaks.nl
 
 ## Theme
-[ThemeKit - Bootstrap Admin Theme Kit (social 2)](https://themeforest.net/item/themekit-bootstrap-admin-theme-kit/6767145)
+[ThemeKit - Bootstrap Admin Theme Kit (Social 1)](https://themeforest.net/item/themekit-bootstrap-admin-theme-kit/6767145)
 
 ## Languages
 - Frontend
