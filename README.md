@@ -11,5 +11,6 @@
 
 ## Colaborators
 - [KingsDevelopment](https://github.com/KingsDevelopment)
+- [Baartd](https://github.com/baartd)
 
 Want to be added, please e-mail me.
