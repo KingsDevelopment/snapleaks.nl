@@ -1,0 +1,51 @@
+{
+	"name": "Role",
+	"plural": "roles",
+	"base": "PersistedModel",
+	"strict": true,
+	"idInjection": true,
+	"options": {
+		"base": "Role",
+		"strict": true
+	},
+	"mixins": {
+		"Timestamp": true,
+		"Softdelete": true
+	},
+	"properties": {
+		"id": {
+			"type": "string",
+			"id": true,
+			"generated": true
+		},
+		"name": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string"
+		},
+		"created": {
+			"type": "date"
+		},
+		"modified": {
+			"type": "date"
+		}
+	},
+	"validations": [],
+	"relations": {
+		"principals": {
+			"type": "hasMany",
+			"model": "RoleMapping",
+			"foreignKey": "roleId"
+		},
+		"users": {
+			"type": "hasMany",
+			"model": "User",
+			"foreignKey": "principalId",
+			"through": "RoleMapping"
+		}
+	},
+	"acls": [],
+	"methods": {}
+}

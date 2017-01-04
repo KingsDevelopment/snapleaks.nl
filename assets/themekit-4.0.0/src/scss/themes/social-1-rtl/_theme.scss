@@ -1,0 +1,14 @@
+// Load Bootstrap variables
+@import "bootstrap/less/variables";
+
+// Load Bootstrap mixins
+@import "bootstrap/less/mixins";
+
+// Common Variables
+@import "../../common/_variables";
+
+// Skin Variables
+@import "skin-social/variables/variables";
+
+// THEME SPECIFIC VARIABLES
+@import "../social-1/_variables";

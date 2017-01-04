@@ -1,0 +1,141 @@
+{
+    "name": "User",
+    "plural": "users",
+    "base": "PersistedModel",
+    "strict": true,
+    "idInjection": true,
+    "options": {
+        "base": "User",
+        "caseSensitiveEmail": false,
+        "strict": true
+    },
+    "mixins": {
+        "Timestamp": true,
+        "Softdelete": true,
+        "LowerCaseEmail": true
+    },
+    "properties": {
+        "username": {
+            "type": "string",
+            "required": false,
+            "unique": true
+        },
+        "password": {
+            "type": "string",
+            "required": true
+        },
+        "email": {
+            "type": "string",
+            "required": false
+        },
+        "avatar": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "accessTokens": {
+            "type": "hasMany",
+            "model": "AccessToken",
+            "foreignKey": "userId",
+            "options": {
+                "disableInclude": true
+            }
+        },
+        "passwordResets": {
+            "type": "hasMany",
+            "model": "PasswordReset",
+            "foreignKey": "userId"
+        },
+        "roles": {
+            "type": "hasMany",
+            "model": "Role",
+            "foreignKey": "principalId",
+            "through": "RoleMapping"
+        },
+        "rolemappings": {
+            "type": "hasMany",
+            "model": "RoleMapping",
+            "foreignKey": "principalId"
+        }
+    },
+    "acls": [{
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "DENY"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "create"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "count"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "login"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "buddyLogin"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "logout"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": "findById"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": "updateAttributes"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": "replaceById"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "confirm"
+    }, {
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "DENY",
+        "property": "resetPassword"
+    }, {
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": [
+            "__get__roles",
+            "__updateById__identities"
+        ]
+    }, {
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "S-Class",
+        "permission": "ALLOW",
+        "property": "*"
+    }, {
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "A-Class",
+        "permission": "ALLOW",
+        "property": "*"
+    }],
+
+    "methods": {}
+}

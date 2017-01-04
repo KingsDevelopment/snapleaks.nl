@@ -31,5 +31,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "PasswordReset": {
+    "dataSource": "db",
+    "public": true
   }
 }

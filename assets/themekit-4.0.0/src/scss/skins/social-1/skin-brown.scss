@@ -1,0 +1,55 @@
+// Load Bootstrap variables
+@import "bootstrap/less/variables";
+
+// Common Variables
+@import "../../common/_variables";
+
+// Skin Variables
+@import "skin-social/variables/variables";
+
+// THEME SPECIFIC VARIABLES
+@import "../../themes/social-1/_variables";
+
+// Skin Customizations
+$primary-color: #c3a961;
+
+// Load Bootstrap
+@import "../../vendor/bootstrap/bootstrap";
+
+// Icons
+@import "font-awesome/less/font-awesome";
+
+// Color Mixins
+@import "colors/less/mixins/mixins";
+
+// Common Demo Style (can be removed)
+@import "../../demo/skins";
+
+// Essentials
+@import "essential/less/main";
+
+// Chat
+@import "chat/less/chat";
+
+// Social Timeline
+@import "social/less/timeline/timeline";
+
+// Social Cover
+@import "social/less/cover/cover";
+
+// Layout
+@import "layout/less/layout";
+
+// Navbar
+@import "navbar/less/navbar";
+
+// Sidebar
+@import "sidebar/less/sidebar";
+
+// Sidebar Skins
+@import "sidebar-skins/sidebar";
+
+// Custom Components
+@import "../../common/components/users";
+@import "../../common/components/messages/message";
+@import "../../common/components/login";

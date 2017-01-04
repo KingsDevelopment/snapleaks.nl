@@ -1,0 +1,45 @@
+{
+	"name": "RoleMapping",
+	"plural": "rolemappings",
+	"base": "PersistedModel",
+	"strict": true,
+	"idInjection": true,
+	"options": {
+		"base": "RoleMapping",
+		"strict": true
+	},
+	"mixins": {
+		"Timestamp": true,
+		"Softdelete": true
+	},
+	"properties": {
+		"id": {
+			"type": "string",
+			"id": true,
+			"generated": true
+		},
+		"principalType": {
+			"type": "string",
+			"description": "The principal type, such as user, application, or role"
+		},
+		"principalId": {
+			"type": "string",
+			"id": true
+		}
+	},
+	"validations": [],
+	"relations": {
+		"role": {
+			"type": "belongsTo",
+			"model": "Role",
+			"foreignKey": "roleId"
+		},
+		"user": {
+			"type": "belongsTo",
+			"model": "User",
+			"foreignKey": "principalId"
+		}
+	},
+	"acls": [],
+	"methods": {}
+}

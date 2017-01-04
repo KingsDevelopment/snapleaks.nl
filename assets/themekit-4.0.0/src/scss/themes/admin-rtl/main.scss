@@ -1,0 +1,9 @@
+// Load theme common
+@import "_theme";
+
+// Common Components
+@import "../../common/components/users";
+
+// Custom Theme
+@import "../admin/_appointments";
+@import "_appointments-rtl.less";
