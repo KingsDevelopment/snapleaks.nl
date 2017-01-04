@@ -1,18 +1,18 @@
-Authentication
+Authentication:
 - Registration
 - Login
 - Reset password
 
-Profile
+Profile:
 - Edit profile
 - Edit password
 
-Upload
+Upload:
 - Multiple images
 - Optional city
 - Optional name
 - Optional snapchat
 
-View
+View:
 - View images
 - Commenting
