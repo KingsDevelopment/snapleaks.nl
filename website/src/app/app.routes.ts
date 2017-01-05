@@ -6,12 +6,12 @@ import { IsAuthenticatedGuard } from './services';
 // components
 import { LoginComponent } from './content/login/login.component';
 import { LogoutComponent } from './content/logout/logout.component';
-import { HomeComponent } from './content/home/home.component';
+import { BaseComponent } from './content/base/base.component';
 
 export const AppRoutes: Routes = [
 	{
 		path: '',
-		component: HomeComponent,
+		component: BaseComponent,
 		canActivate: [IsAuthenticatedGuard]
 	},
 	{

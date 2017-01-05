@@ -46,6 +46,27 @@ export class ValidationService {
         };
     }
 
+
+    emailUnique() {
+        return (c: FormControl) => {
+            let promise = new Promise((resolve, reject) => {
+                this._user
+                .count({
+                    email: c.value
+                })
+                .subscribe(result => {
+                    if(result.count) {
+                        return resolve({ emailUnique : true });
+                    }
+
+                    resolve(null);
+                }, err => resolve({ emailUnique : true }));
+            });
+
+            return Observable.fromPromise(promise);
+        };
+    }
+
     token() {
         return (c: FormControl) => {
             let promise = new Promise((resolve, reject) => {

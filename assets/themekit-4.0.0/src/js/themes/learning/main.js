@@ -1,2 +1,0 @@
-// Curriculum
-require('./_curriculum');

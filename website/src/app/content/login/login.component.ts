@@ -36,6 +36,8 @@ export class LoginComponent implements OnInit, OnDestroy{
 
 		this.registerForm = this._fb.group({
         	username: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)], [this._cv.usernameUnique()]],
+        	email: ['', [Validators.required, Validators.minLength(3), this._cv.email], [this._cv.emailUnique()]],
+        	tos: [false, [Validators.required]],
         	passwords: this._fb.group({
         		password: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(20), this._cv.validPassword]],
         		repeat: ['', [Validators.required]]
@@ -70,6 +72,7 @@ export class LoginComponent implements OnInit, OnDestroy{
 
 			let postData = {
 				username: this.registerForm.value.username,
+				email: this.registerForm.value.email,
 				password: this.registerForm.value.passwords.password
 			};
 

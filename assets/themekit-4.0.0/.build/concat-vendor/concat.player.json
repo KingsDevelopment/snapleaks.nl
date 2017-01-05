@@ -1,8 +1,0 @@
-{
-	"build": "js/vendor/player/all.js",
-	"cwd": "$THEME_DIR/js/vendor/player",
-	"files": [
-		"jquery.jplayer.js",
-		"jplayer.playlist.js"
-	]
-}

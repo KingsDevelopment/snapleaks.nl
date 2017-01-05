@@ -5,8 +5,10 @@ import { environment } from '../environments/environment';
 
 @Component({
 	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
+	template: `<router-outlet></router-outlet>
+				<simple-notifications [options]="toastOptions"></simple-notifications>
+				<template ngbModalContainer></template>`
+
 })
 export class AppComponent {
 	public toastOptions = {

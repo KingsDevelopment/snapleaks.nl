@@ -1,12 +1,8 @@
-//colors
-$color-white: #fff;
-$color-yellow: #ffff00;
-$color-grey: #5b5b5b;
+@import "variables";
 
 .sk-cube-container {
   position:relative;
   width:auto;
-
 
   .sk-cube {
     background-color: $color-grey;

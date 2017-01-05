@@ -1,5 +1,0 @@
-{
-	"build": "js/app/timeline.js",
-	"cwd": "lib/social/js/",
-	"files": ["_timeline.js"]
-}

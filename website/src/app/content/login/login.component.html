@@ -1,98 +1,159 @@
-<div id="content">
-	<div class="container-fluid">
+<div class="modal login" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-top-menu">
+                    <div class="half">
+                        <button class="btn btn-link btn-block" (click)="isRegister = true" [class.active-ind]="isRegister" rel="register-window">Register new account</button>
+                    </div>
+                    <div class="half">
+                        <button class="btn btn-link btn-block" (click)="isRegister = false" [class.active-ind]="!isRegister" rel="login-window">Login</button>
+                    </div>
+                </div>
+                <div class="modal-window register-window" *ngIf="isRegister">
+                	<form [formGroup]="registerForm" (ngSubmit)="register()" novalidate>
+                		<div class="row">
+	                        <div class="col-sm-7 border-right">
+	                        	<div class="form-group" [class.has-warning]="!registerForm.controls.email.valid && registerForm.controls.email.dirty">
+		                            <div class="input-group">
+		                                <span class="input-group-addon">E-mail:</span>
+		                                <input type="text" class="form-control" formControlName="email">
+		                            </div>
 
-		<div class="lock-container" *ngIf="!isRegister">
-			<h1>Inloggen</h1>
-			<form class="panel panel-default text-center" [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
-				<div class="panel-body">
-					<div class="form-group" [class.has-warning]="!loginForm.controls.username.valid && loginForm.controls.username.dirty">
-						<input class="form-control" type="text" placeholder="Gebruikersnaam"
-						formControlName="username">
-						<span class="help-block" *ngIf="!loginForm.controls.username.valid && loginForm.controls.username.dirty && loginForm.controls.username.hasError('required')">
-							Gebruikersnaam is vereist.
-						</span>
-					</div>
+									<span class="help-block" *ngIf="!registerForm.controls.email.valid && registerForm.controls.email.dirty && registerForm.controls.email.hasError('required')">
+										E-mail is vereist.
+									</span>
+									<span class="help-block" *ngIf="!registerForm.controls.email.valid && registerForm.controls.email.dirty && registerForm.controls.email.hasError('emailUnique')">
+										E-mail is al bekend bij ons.
+									</span>
+									<span class="help-block" *ngIf="!registerForm.controls.email.valid && registerForm.controls.email.dirty && registerForm.controls.email.hasError('minlength')">
+										E-mail moet minstens 3 tekens bevatten.
+									</span>
+									<span class="help-block" *ngIf="!registerForm.controls.email.valid && registerForm.controls.email.dirty && registerForm.controls.email.hasError('incorrectMailFormat')">
+										E-mail is niet valide.
+									</span>
+	                            </div>
 
-					<div class="form-group" [class.has-warning]="!loginForm.controls.password.valid && loginForm.controls.password.dirty">
-						<input class="form-control" type="password" placeholder="Wachtwoord"
-						formControlName="password">
-						<span class="help-block" *ngIf="!loginForm.controls.password.valid && loginForm.controls.password.dirty && loginForm.controls.password.hasError('required')">
-							Wachtwoord is vereist.
-						</span>
-					</div>
+	                        	<div class="form-group" [class.has-warning]="!registerForm.controls.username.valid && registerForm.controls.username.dirty">
+		                            <div class="input-group">
+		                                <span class="input-group-addon">Gebruikersnaam:</span>
+		                                <input type="text" class="form-control" formControlName="username">
+		                            </div>
 
-					<button class="btn images btn-primary">Inloggen <i class="fa fa-fw fa-unlock-alt"></i></button>
-					<a (click)="isRegister = true" class="forgot-password">Registreren</a>
-				</div>
-			</form>
-		</div>
+									<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('required')">
+										Gebruikersnaam is vereist.
+									</span>
+									<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('usernameUnique')">
+										Gebruikersnaam is al bekend bij ons.
+									</span>
+									<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('minlength')">
+										Gebruikersnaam moet minstens 3 tekens bevatten.
+									</span>
+									<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('maxlength')">
+										Gebruikersnaam mag maximaal 20 tekens bevatten.
+									</span>
+	                            </div>
 
-		<div class="lock-container" *ngIf="isRegister">
-			<h1>Registreren</h1>
-			<form class="panel panel-default text-center" [formGroup]="registerForm" (ngSubmit)="register()" novalidate>
-				<div class="panel-body">
-					<div class="form-group" [class.has-warning]="!registerForm.controls.username.valid && registerForm.controls.username.dirty">
-						<input class="form-control" type="text" placeholder="Gebruikersnaam"
-						formControlName="username">
-						<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('required')">
-							Gebruikersnaam is vereist.
-						</span>
-						<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('usernameUnique')">
-							Gebruikersnaam is al bekend bij ons.
-						</span>
-						<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('minlength')">
-							Gebruikersnaam moet minstens 3 tekens bevatten.
-						</span>
-						<span class="help-block" *ngIf="!registerForm.controls.username.valid && registerForm.controls.username.dirty && registerForm.controls.username.hasError('maxlength')">
-							Gebruikersnaam mag maximaal 20 tekens bevatten.
-						</span>
-					</div>
+	                            <div formGroupName="passwords">
+	                            	<div class="form-group" [class.has-warning]="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty">
 
-					<div formGroupName="passwords">
-						<div class="form-group" [class.has-warning]="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty">
-							<input class="form-control" type="password" placeholder="Wachtwoord"
-							[class.has-warning]="!registerForm.controls.passwords.controls.password.valid"
-							formControlName="password">
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('required')">
-								Wachtwoord is vereist.
-							</span>
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('minlength')">
-								Wachtwoord moet minstens 8 tekens bevatten.
-							</span>
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('maxlength')">
-								Wachtwoord mag maximaal 20 tekens bevatten.
-							</span>
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noNumber')">
-								Wachtwoord moet minstens 1 nummer bevatten.
-							</span>
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noLowerCase')">
-								Wachtwoord moet minstens 1 kleine letter bevatten.
-							</span>
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noUpperCase')">
-								Wachtwoord moet minstens 1 hoofdletter bevatten.
-							</span>
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noSpecialChar')">
-								Wachtwoord moet minstens 1 speciale character bevatten.
-							</span>
-						</div>
+			                            <div class="input-group">
+			                                <span class="input-group-addon">Wachtwoord:</span>
+			                                <input type="password" class="form-control" formControlName="password">
+			                            </div>
 
-						<div class="form-group" [class.has-warning]="registerForm.controls.passwords.controls.repeat.dirty && registerForm.controls.passwords.dirty && (!registerForm.controls.passwords.valid || !registerForm.controls.passwords.controls.repeat.valid)">
-							<input class="form-control" type="password" placeholder="Wachtwoord herhalen"
-							formControlName="repeat">
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.repeat.dirty && registerForm.controls.passwords.controls.repeat.hasError('required')">
-								Wachtwoord herhaling is vereist.
-							</span>
-							<span class="help-block" *ngIf="!registerForm.controls.passwords.valid && registerForm.controls.passwords.dirty && registerForm.controls.passwords.hasError('areEqual')">
-								Wachtwoorden moeten gelijk zijn.
-							</span>
-						</div>
-					</div>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('required')">
+											Wachtwoord is vereist.
+										</span>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('minlength')">
+											Wachtwoord moet minstens 8 tekens bevatten.
+										</span>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('maxlength')">
+											Wachtwoord mag maximaal 20 tekens bevatten.
+										</span>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noNumber')">
+											Wachtwoord moet minstens 1 nummer bevatten.
+										</span>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noLowerCase')">
+											Wachtwoord moet minstens 1 kleine letter bevatten.
+										</span>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noUpperCase')">
+											Wachtwoord moet minstens 1 hoofdletter bevatten.
+										</span>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.password.dirty && registerForm.controls.passwords.controls.password.hasError('noSpecialChar')">
+											Wachtwoord moet minstens 1 speciale character bevatten.
+										</span>
+		                            </div>
 
-					<button class="btn images btn-primary">Registreren <i class="fa fa-fw fa-unlock-alt"></i></button>
-					<a (click)="isRegister = false" class="forgot-password">Terug naar inloggen</a>
-				</div>
-			</form>
-		</div>
+									<div class="form-group" [class.has-warning]="registerForm.controls.passwords.controls.repeat.dirty && registerForm.controls.passwords.dirty && (!registerForm.controls.passwords.valid || !registerForm.controls.passwords.controls.repeat.valid)">
+			                            <div class="input-group">
+			                                <span class="input-group-addon">Herhaal wachtwoord:</span>
+			                                <input type="password" class="form-control" formControlName="repeat">
+			                            </div>
 
-	</div>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.controls.password.valid && registerForm.controls.passwords.controls.repeat.dirty && registerForm.controls.passwords.controls.repeat.hasError('required')">
+											Wachtwoord herhaling is vereist.
+										</span>
+										<span class="help-block" *ngIf="!registerForm.controls.passwords.valid && registerForm.controls.passwords.controls.repeat.dirty && registerForm.controls.passwords.hasError('areEqual')">
+											Wachtwoorden moeten gelijk zijn.
+										</span>
+			                        </div>
+	                            </div>
+	                        </div>
+	                        <div class="col-sm-5">
+	                            <div class="vertical-half">
+	                                <div class="custom-checkbox-vertical custom-checkbox">
+	                                    <p>Ik ga akkoord gaan met de</p>
+	                                    <input type="checkbox" required value="true" name="check" id="agreeTerms" formControlName="tos">
+	                                    <label for="agreeTerms">Voorwaarden.</label>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button class="btn btn-block btn-info custom-button" disabled *ngIf="!registerForm.valid">FORMULIER INCORRECT</button>
+	                        <button class="btn btn-block btn-primary custom-button" *ngIf="registerForm.valid">REGISTREREN</button>
+	                    </div>
+                    </form>
+                </div>
+
+                <div class="modal-window login-window" *ngIf="!isRegister">
+                	<form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+	                    <div class="half-horizontal">
+	                    	<div class="form-group" [class.has-warning]="!loginForm.controls.username.valid && loginForm.controls.username.dirty">
+		                        <div class="input-group">
+		                            <span class="input-group-addon">Gebruikersnaam:</span>
+		                            <input type="text" class="form-control"
+									formControlName="username">
+		                        </div>
+
+								<span class="help-block" *ngIf="!loginForm.controls.username.valid && loginForm.controls.username.dirty && loginForm.controls.username.hasError('required')">
+									Gebruikersnaam is vereist.
+								</span>
+	                        </div>
+	                    </div>
+
+	                    <div class="half-horizontal">
+	                    	<div class="form-group" [class.has-warning]="!loginForm.controls.password.valid && loginForm.controls.password.dirty">
+		                        <div class="input-group">
+		                            <span class="input-group-addon">Wachtwoord:</span>
+		                            <input type="password" class="form-control"
+									formControlName="password">
+		                        </div>
+
+								<span class="help-block" *ngIf="!loginForm.controls.password.valid && loginForm.controls.password.dirty && loginForm.controls.password.hasError('required')">
+									Wachtwoord is vereist.
+								</span>
+	                        </div>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button class="btn btn-block btn-info custom-button" disabled *ngIf="!loginForm.valid">FORMULIER INCORRECT</button>
+	                        <button class="btn btn-block btn-primary custom-button" *ngIf="loginForm.valid">INLOGGEN</button>
+	                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,9 +1,0 @@
-{
-	"task": "copy-vendor-charts-easy-pie-scripts",
-	"cwd": "bower_components",
-	"src": [
-		"jquery.easy-pie-chart/dist/jquery.easypiechart.js"
-	],
-	"dest": "js/vendor/charts/easy-pie",
-	"flatten": true
-}

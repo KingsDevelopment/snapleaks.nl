@@ -1,8 +1,0 @@
-{
-	"essential": "dist/ui",
-	"layout": "dist/ui",
-	"sidebar": "dist/ui",
-	"navbar": "dist/ui",
-	"color": "dist/ui",
-	"choose": ""
-}

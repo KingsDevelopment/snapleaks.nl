@@ -1,0 +1,42 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" routerLinke="/">
+                            <img src="/assets/images/snapleaks_250.png" alt="SnapLeaks- The place for leaked snapchat nudes."/>
+                        </a>
+                    </div>
+                    <div class="right-container" *ngIf="user">
+                        <div class="user-box">
+                            <a href="#">
+                                <figure>
+                                    <img [src]="user.avatar" alt="{{ user.username }} Avatar"/>
+                                </figure>
+                                <span class="name">{{ user.username }}</span>
+                            </a>
+                            <div class="drop-down">
+                                <div class="counters-line">
+                                    <div class="half"><span class="counter">321k</span><span class="desc">kudos</span></div>
+                                    <div class="half"><span class="counter">42</span><span class="desc">leaks</span></div>
+                                </div>
+                                <div class="buttons-line">
+                                    <a href="#" class="btn btn-primary btn-block custom-button">Upload Leak</a>
+                                    <a href="settings.html" class="btn btn-primary btn-block custom-button">Profiel & Instellingen</a>
+                                    <a routerLink="/logout" class="btn btn-primary btn-block custom-button">Uitloggen</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

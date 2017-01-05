@@ -1,8 +1,0 @@
-{
-	"task": "essential-images",
-	"cwd": "$ROOT_DIR",
-	"src": ["lib/essential/images/choose/*"],
-	"dest": "images/choose",
-	"flatten": true,
-	"themes": ["essential"]
-}

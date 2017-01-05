@@ -1,8 +1,0 @@
-{
-	"task": "layout-images",
-	"cwd": "$ROOT_DIR",
-	"src": ["lib/layout/images/choose/*"],
-	"dest": "images/choose",
-	"flatten": true,
-	"themes": ["layout"]
-}

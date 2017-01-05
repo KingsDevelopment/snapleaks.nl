@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Aruna</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.selectBoxIt.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="fileupload/css/jquery.fileupload.css">
+        <link rel="stylesheet" href="fileupload/css/jquery.fileupload-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=225987124123858";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    </head>
+    <body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="top-ten">
+                                <div class="activator">
+                                    <div class="left">
+                                        <span class="small">Top</span>
+                                        <span class="small">All</span>
+                                        <span class="small">Time</span>
+                                    </div>
+                                    <div class="right">5</div>
+                                </div>
+                                <div class="drop-down">
+                                    <div class="post-list">
+                                        <article>
+                                        <figure>
+                                            <img src="img/top1.jpg" alt=""/>
+                                            <figcaption>01</figcaption>
+                                        </figure>
+                                        <div class="text">
+                                            <h3><a href="post.html">Helping the elderly is not fun...</a></h3>
+                                            <span class="date">25.04</span>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <figure>
+                                            <img src="img/top2.jpg" alt=""/>
+                                            <figcaption>02</figcaption>
+                                        </figure>
+                                        <div class="text">
+                                            <h3><a href="post.html">Old people burning...</a></h3>
+                                            <span class="date">25.04</span>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <figure>
+                                            <img src="img/top3.jpg" alt=""/>
+                                            <figcaption>03</figcaption>
+                                        </figure>
+                                        <div class="text">
+                                            <h3><a href="post.html">Inappropriate jokes are alway...</a></h3>
+                                            <span class="date">23.04</span>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <figure>
+                                            <img src="img/top4.jpg" alt=""/>
+                                            <figcaption>04</figcaption>
+                                        </figure>
+                                        <div class="text">
+                                            <h3><a href="post.html">The Law</a></h3>
+                                            <span class="date">22.04</span>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <figure>
+                                            <img src="img/top5.jpg" alt=""/>
+                                            <figcaption>05</figcaption>
+                                        </figure>
+                                        <div class="text">
+                                            <h3><a href="post.html">Helping the elderly is not fun...</a></h3>
+                                            <span class="date">25.04</span>
+                                        </div>
+                                    </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="img/logo.png" alt=""/>
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="index2.html">Homepage with 2 right sidebars</a></li>
+                                    <li><a href="index3.html">Homepage with big right sidebar</a></li>
+                                    <li><a href="index4.html">Homepage big masonry</a></li>
+                                    <li><a href="index5.html">Homepage with masonry and sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="category.html">Category page</a></li>
+                                    <li><a href="post.html">Single post page</a></li>
+                                    <li><a href="profile.html">User profile page</a></li>
+                                    <li><a href="settings.html">Settings page</a></li>
+                                    <li><a href="widgets.html">Widgets page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Popular</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">About Us</a></li>
+                                    <li class="has-dropdown">
+                                        <a href="#">Contact</a>
+                                        <ul>
+                                            <li><a href="#">Our People</a></li>
+                                            <li class="has-dropdown">
+                                                <a href="#">Our Address</a>
+                                                <ul>
+                                                    <li><a href="#">Google Maps</a></li>
+                                                    <li><a href="#">Text Address</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Our Emails</a></li>
+                                            <li><a href="#">Job Offerings</a></li>
+                                            <li><a href="#">Communication</a></li>
+                                            <li><a href="#">Communication</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Shortcodes</a></li>
+                                    <li><a href="#">Feeatures</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="right-container">
+                            <div class="user-box">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/user-box.png" alt=""/>
+                                    </figure>
+                                    <span class="name">teothemes</span>
+                                </a>
+                                <div class="drop-down">
+                                    <div class="counters-line">
+                                        <div class="half"><span class="counter">321k</span><span class="desc">kudos</span></div>
+                                        <div class="half"><span class="counter">42</span><span class="desc">posts</span></div>
+                                    </div>
+                                    <div class="buttons-line">
+                                        <a href="#" class="btn btn-primary btn-block custom-button">Post Fun</a>
+                                        <a href="settings.html" class="btn btn-primary btn-block custom-button">Profile & Settings</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                            <a href="#" class='share'>share</a>
+                            <ul class="drop-down">
+                                <li><a href="http://twitter.com/teothemes" class="twitter">twitter</a></li>
+                                <li><a href="http://dribbble.com/teothemes" class="dribble">dribble</a></li>
+                                <li><a href="http://plus.google.com" class="googleplus">googleplus</a></li>
+                                <li><a href="http://evernote.com" class="evernote">evernote</a></li>
+                                <li><a href="http://facebook.com/teothemes" class="facebook">facebook</a></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="main" role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 right-content profile-bg">
+                    <div class="row">
+                        <div class="profile-wrap" style="background-image: url('img/settings-cover.jpg');">
+                            <div class="col-sm-9">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <figure>
+                                            <img src="img/user02.png" alt=""/>
+                                        </figure>
+                                        <div class="text">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                    <a href="#" class="user-name">TeoThemes</a>
+                                                    <div class="page-name">Settings page</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div class="counter-item">
+                                            <span class="number">321k</span><br/>
+                                            <span class="exp">kudos</span>
+                                        </div>
+                                        <div class="counter-item">
+                                            <span class="number">73</span><br/>
+                                            <span class="exp">posts</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-12">
+                    <div class="main-wrap">
+                        <h1>PUBLIC PROFILE & ACCOUNT</h1>
+                        <div class="separator"></div>
+                        <div class="user-cover-edit" style="background-image: url('img/user-cover02.jpg');">
+                            <div class="col-sm-8 col-md-9">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <figure>
+                                            <img src="img/user02.png" alt=""/>
+                                        </figure>
+                                        <div class="text">
+                                            <div class="outer">
+                                                <div class="inner">
+                                                    <a href="#" class="user-name">TeoThemes</a>
+                                                    <div class="page-name">Settings page</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-container">
+                                            <button class="btn btn-primary custom-button btn-sm">Edit</button>
+                                            <button class="btn btn-primary custom-button btn-sm">Border: #0e0e0e <i class="color-pick"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-3">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <button class="btn btn-primary custom-button btn-md">Edit Profile Background</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Email:</span>
+                                    <input type="text" class="form-control" value="teothemes@gmail.com">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Password:</span>
+                                    <input type="password" class="form-control" value="password">
+                                </div>
+                                <button class="btn btn-primary custom-button btn-block" type="submit"><i class="glyphicon glyphicon-check"></i> Save Settings</button>
+                                <div class="spacer"></div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Username:</span>
+                                    <input type="text" class="form-control" value="loginteothemes">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon">Repeat Password:</span>
+                                    <input type="password" class="form-control" value="password">
+                                </div>
+                            </div>
+                        </div>
+                        <h1>Preferences</h1>
+                        <div class="separator"></div>
+                        <div class="checkbox-line">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" value="check1" name="check" id="check1" checked />
+                                <label for="check1">ANONYMOUS SURFING (YOU CAN POST)</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" value="check1" name="check" id="check2" />
+                                <label for="check2">ADULT FILTER</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" value="check1" name="check" id="check3" />
+                                <label for="check3" class="has-popover" data-content="When you scroll down, active gifs will become inactive. This is a life saver - trust us!">ACTIVATE .GIFs ON SCROLL</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <aside class="col-sm-3 left-aside">
+                    <div class="sidebar-menu">
+                        <div class="top-menu">
+                            <div class="inception-menu">
+                                <a href="#" class="selector">Menu</a>
+                                <div class="sub-navigation">
+                                    <div class="half">
+                                        <a href="#" rel="sidebar-content-hot"><i class='icon-hot'></i> Hot Posts</a>
+                                    </div>
+                                    <div class="half">
+                                        <a href="#" rel="sidebar-content-bookmarks"><i class='icon-bookmarks'></i> Bookmarks</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-title">Categories</div>
+                        </div>
+                        <div class="sidebar-content sidebar-content-category">
+                            <div class="menu-group">
+                                <h2><a href="category.html">Interwebs</a></h2>
+                                <hr />
+                                <ul>
+                                    <li><a href="category.html">Lolcats</a></li>
+                                    <li><a href="category.html">Lolweb</a></li>
+                                    <li><a href="category.html">Chinese Dad</a></li>
+                                    <li><a href="category.html">Idontalways</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-group">
+                                <h2><a href="category.html">Politics</a></h2>
+                                <hr />
+                                <ul>
+                                    <li><a href="category.html">Funny Politicians</a></li>
+                                    <li><a href="category.html">#ObamaStuff</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-group">
+                                <h2><a href="category.html">Gingerfun</a></h2>
+                                <hr />
+                                <ul>
+                                    <li><a href="category.html">Ginger People</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu-group">
+                                <h2><a href="category.html">Cute</a></h2>
+                                <hr />
+                                <ul>
+                                    <li><a href="category.html">Cute Kittens</a></li>
+                                    <li><a href="category.html">Pandas</a></li>
+                                    <li><a href="category.html">Babies Garden</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-content sidebar-content-hot">
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article01.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">Old People Burning</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article02.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How to get killed and revive in 3 days!</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.htmls">
+                                        <img src="img/side-article03.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How Photoshop Really Works</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article01.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">Old People Burning</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article02.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How to get killed and revive in 3 days!</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article03.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How Photoshop Really Works</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-content sidebar-content-bookmarks">
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article01.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">Old People Burning</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article02.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How to get killed and revive in 3 days!</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.htmls">
+                                        <img src="img/side-article03.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How Photoshop Really Works</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article01.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">Old People Burning</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article02.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How to get killed and revive in 3 days!</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-article">
+                                <figure>
+                                    <a href="post.html">
+                                        <img src="img/side-article03.jpg" alt=""/>
+                                    </a>
+                                </figure>
+                                <h2><a href="post.html">How Photoshop Really Works</a></h2>
+                                <div class="counters-line">
+                                    <div class="pull-left">
+                                        <div class="date"><i class="icon-date"></i> 23.04</div>
+                                        <div class="user"><i class="icon-user"></i> <a href="profile.html">johnjsu</a></div>
+                                        <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="footer-widget">
+                        <h2>About</h2>
+                        <hr />
+                        <div class="widget-content">
+                            <figure class="footer-logo">
+                                <a href="index.html"><img src="img/footer-logo.png" alt=""/></a>
+                            </figure>
+                            <p>
+                                Aruna is a theme developed by
+                                <a href="http://teothemes.com" title="WordPress themes">TeoThemes</a>. It is an image
+                                sharing, fun,social theme for the ones
+                                looking forsome fun! It also has
+                                incredible features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-sm-offset-1">
+                    <div class="footer-widget">
+                        <h2>Funny stuff this week</h2>
+                        <hr />
+                        <div class="widget-content">
+                            <div class="post-preview">
+                                <div class="left">
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="img/footer-img-small01.jpg" alt=""/>
+                                        </a>
+                                    </figure>
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="img/footer-img-small02.jpg" alt=""/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="left">
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="img/footer-img-small02.jpg" alt=""/>
+                                        </a>
+                                    </figure>
+                                    <figure class="small">
+                                        <a href="post.html">
+                                            <img src="img/footer-img-small01.jpg" alt=""/>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="right">
+                                    <figure class="big">
+                                        <a href="post.html">
+                                            <img src="img/footer-img-big01.jpg" alt=""/>
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1">
+                    <div class="footer-widget">
+                        <h2>Best footer widget award</h2>
+                        <hr />
+                        <div class="widget-content">
+                            <a href="#" class="btn btn-primary btn-block custom-button">Press this button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="scroll-top">&nbsp;</a>
+    <div id="scripts">
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
+        <script src="js/vendor/jquery-ui.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
+        <script src="js/vendor/jquery.selectBoxIt.min.js"></script>
+        <script src="js/vendor/jquery.mCustomScrollbar.min.js"></script>
+        <script src="js/vendor/jquery.mousewheel.min.js"></script>
+        <script src="fileupload/js/vendor/jquery.ui.widget.js"></script>
+        <script src="js/vendor/jquery.tagsinput.min.js"></script>
+        <script src="fileupload/js/jquery.iframe-transport.js"></script>
+        <script src="fileupload/js/jquery.fileupload.js"></script>
+        <script src="fileupload/js/jquery.fileupload-process.js"></script>
+        <script src="fileupload/js/jquery.fileupload-image.js"></script>
+        <script src="fileupload/js/jquery.fileupload-audio.js"></script>
+        <script src="fileupload/js/jquery.fileupload-video.js"></script>
+        <script src="fileupload/js/jquery.fileupload-validate.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/retina-1.1.0.min.js"></script>
+        <script src="js/jquery.lazyload.min.js"></script>
+    </div>
+    </body>
+</html>

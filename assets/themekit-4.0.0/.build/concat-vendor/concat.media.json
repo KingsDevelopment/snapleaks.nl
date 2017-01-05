@@ -1,8 +1,0 @@
-{
-	"build": "js/vendor/media/all.js",
-	"cwd": "$THEME_DIR/js/vendor/media",
-	"files": [
-		"owl.carousel.js",
-		"slick.js"
-	]
-}

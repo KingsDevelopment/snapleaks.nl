@@ -1,7 +1,0 @@
-{
-	"task": "copy-vendor-tree-scripts",
-	"cwd": "bower_components",
-	"src": ["fancytree/dist/jquery.fancytree-all.js"],
-	"dest": "js/vendor/tree",
-	"flatten": true
-}

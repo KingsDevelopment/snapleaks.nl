@@ -1,2 +1,64 @@
-@import "themekit";
+@import "variables";
 @import "loading";
+
+body {
+	padding:0;
+
+	&.login {
+		background: $color-yellow;
+	}
+}
+
+.page-container {
+	padding-top: 80px;
+	padding-bottom: 24px;
+}
+
+.modal.login {
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+
+	display:block;
+
+	.modal-dialog {
+		padding-top: 0;
+	}
+
+	.custom-checkbox.custom-checkbox-vertical label {
+		color: #c4c4c4;
+	}
+
+	.login-window, .register-window {
+		display: block !important;
+
+		.form-group {
+			margin-bottom:10px;
+
+			.input-group {
+				margin-bottom:2px;
+			}
+		}
+	}
+
+	.register-window {
+		.col-sm-7 {
+			padding-bottom:0;
+			padding-top:10px;
+		}
+
+		.custom-checkbox {
+			width:100%;
+		}
+	}
+
+	.modal-footer .btn-primary {
+		display: block;
+	}
+}
+
+
+header .navbar-default .navbar-brand {
+	padding: 10px 27px;
+}

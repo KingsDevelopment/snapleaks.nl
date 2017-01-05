@@ -29,7 +29,8 @@ import { IsAuthenticatedGuard } from './services';
 import { LoadingComponent } from './content/loading/loading.component';
 import { LoginComponent } from './content/login/login.component';
 import { LogoutComponent } from './content/logout/logout.component';
-import { HomeComponent } from './content/home/home.component';
+import { BaseComponent } from './content/base/base.component';
+import { HeaderComponent } from './content/header/header.component';
 
 @NgModule({
 	declarations: [
@@ -37,7 +38,8 @@ import { HomeComponent } from './content/home/home.component';
 		LoadingComponent,
 		LoginComponent,
 		LogoutComponent,
-		HomeComponent
+		BaseComponent,
+		HeaderComponent
 	],
 	imports: [
 		// sdk
