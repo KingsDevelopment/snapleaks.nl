@@ -1,2 +1,3 @@
 sdk
 docker-compose/.env
+*/**/.env
