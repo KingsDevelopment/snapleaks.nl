@@ -10,27 +10,38 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" routerLinke="/">
+                        <a class="navbar-brand" routerLink="/">
                             <img src="/assets/images/snapleaks_250.png" alt="SnapLeaks- The place for leaked snapchat nudes."/>
                         </a>
                     </div>
                     <div class="right-container" *ngIf="user">
                         <div class="user-box">
-                            <a href="#">
-                                <figure>
-                                    <img [src]="user.avatar" alt="{{ user.username }} Avatar"/>
-                                </figure>
+                            <div class="user">
                                 <span class="name">{{ user.username }}</span>
-                            </a>
+                                <span class="fa fa-caret-down"></span>
+                            </div>
                             <div class="drop-down">
                                 <div class="counters-line">
                                     <div class="half"><span class="counter">321k</span><span class="desc">kudos</span></div>
                                     <div class="half"><span class="counter">42</span><span class="desc">leaks</span></div>
                                 </div>
                                 <div class="buttons-line">
-                                    <a href="#" class="btn btn-primary btn-block custom-button">Upload Leak</a>
-                                    <a href="settings.html" class="btn btn-primary btn-block custom-button">Profiel & Instellingen</a>
-                                    <a routerLink="/logout" class="btn btn-primary btn-block custom-button">Uitloggen</a>
+                                    <a href="#" class="btn btn-primary btn-block custom-button">
+                                    	<span class="fa fa-upload"></span>
+                                    	Upload Leak
+                                    </a>
+                                    <a href="#" class="btn btn-primary btn-block custom-button">
+                                    	<span class="fa fa-star"></span>
+                                    	Favorieten
+                                    </a>
+                                    <a href="settings.html" class="btn btn-primary btn-block custom-button">
+                                    	<span class="fa fa-cog"></span>
+                                    	Profiel &amp; Instellingen
+                                    </a>
+                                    <a routerLink="/logout" class="btn btn-primary btn-block custom-button">
+                                    	<span class="fa fa-sign-out"></span>
+                                    	Uitloggen
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation, Input, OnInit } from '@angular/core';
 
 // services
 import { LogService, UserService } from '../../services';
@@ -8,7 +8,8 @@ import { User } from '../../sdk';
 
 @Component({
 	selector: 'base-header',
-	templateUrl: './header.component.html'
+	templateUrl: './header.component.html',
+	encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit{
 	public user:User;
@@ -18,10 +19,6 @@ export class HeaderComponent implements OnInit{
 	ngOnInit() {
 		this.user = this._user.user;
 		this._user.userUpdated
-		.subscribe(() => {
-			this.user = this._user.user;
-		});
-		this._user.authenticated
 		.subscribe(() => {
 			this.user = this._user.user;
 		});

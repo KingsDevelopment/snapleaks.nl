@@ -1,4 +1,10 @@
+@import '~font-awesome/css/font-awesome.css';
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
 @import "variables";
+@import "theme";
 @import "loading";
 
 body {
@@ -16,10 +22,6 @@ body {
 
 .modal.login {
 	position:fixed;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-
 	display:block;
 
 	.modal-dialog {

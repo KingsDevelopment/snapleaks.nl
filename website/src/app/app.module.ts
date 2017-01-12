@@ -15,6 +15,7 @@ import { SDKBrowserModule } from './sdk';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 import { MomentModule } from 'angular2-moment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MasonryModule } from 'angular2-masonry';
 
 // services
 import { UserService,
@@ -31,6 +32,9 @@ import { LoginComponent } from './content/login/login.component';
 import { LogoutComponent } from './content/logout/logout.component';
 import { BaseComponent } from './content/base/base.component';
 import { HeaderComponent } from './content/header/header.component';
+import { FooterComponent } from './content/footer/footer.component';
+import { SidebarComponent } from './content/sidebar/sidebar.component';
+import { HomeComponent } from './content/home/home.component';
 
 @NgModule({
 	declarations: [
@@ -39,7 +43,10 @@ import { HeaderComponent } from './content/header/header.component';
 		LoginComponent,
 		LogoutComponent,
 		BaseComponent,
-		HeaderComponent
+		HeaderComponent,
+		FooterComponent,
+		SidebarComponent,
+		HomeComponent
 	],
 	imports: [
 		// sdk
@@ -58,6 +65,7 @@ import { HeaderComponent } from './content/header/header.component';
 		SimpleNotificationsModule,
 		MomentModule,
 		NgbModule.forRoot(),
+		MasonryModule,
 
 		// additional routes, load in last. (Inccludes 404 for any additional weird page)
 		RouterModule.forRoot(AppRoutes)

@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://api.snapleaks.local'
+  apiUrl: 'http://api.snapleaks.local:3000'
 };

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 import { LoopBackConfig } from './sdk';
 import { environment } from '../environments/environment';
@@ -7,7 +7,8 @@ import { environment } from '../environments/environment';
 	selector: 'app-root',
 	template: `<router-outlet></router-outlet>
 				<simple-notifications [options]="toastOptions"></simple-notifications>
-				<template ngbModalContainer></template>`
+				<template ngbModalContainer></template>`,
+	encapsulation: ViewEncapsulation.None
 
 })
 export class AppComponent {

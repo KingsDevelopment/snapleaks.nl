@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
 	selector: 'loading',
-	templateUrl: './loading.component.html'
+	templateUrl: './loading.component.html',
+	encapsulation: ViewEncapsulation.None
 })
 export class LoadingComponent {
 	@Input('fullscreen') fullscreen:boolean = false;

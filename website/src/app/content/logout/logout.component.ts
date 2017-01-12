@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 // dependencies
@@ -9,7 +9,8 @@ import { LogService, UserService } from '../../services';
 
 @Component({
 	selector: 'logout',
-	template: `<loading size="large" [fullscreen]="true"></loading>`
+	template: `<loading size="large" [fullscreen]="true"></loading>`,
+	encapsulation: ViewEncapsulation.None
 })
 export class LogoutComponent {
 	constructor(private _notification:NotificationsService, private _user: UserService, private _router: Router, private _log:LogService){

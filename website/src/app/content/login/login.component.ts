@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, ViewEncapsulation, Input, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -13,7 +13,8 @@ import { User } from '../../sdk';
 
 @Component({
 	selector: 'login',
-	templateUrl: './login.component.html'
+	templateUrl: './login.component.html',
+	encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit, OnDestroy{
 	private body;

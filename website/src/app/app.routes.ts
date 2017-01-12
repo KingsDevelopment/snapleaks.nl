@@ -7,12 +7,18 @@ import { IsAuthenticatedGuard } from './services';
 import { LoginComponent } from './content/login/login.component';
 import { LogoutComponent } from './content/logout/logout.component';
 import { BaseComponent } from './content/base/base.component';
+import { HomeComponent } from './content/home/home.component';
 
 export const AppRoutes: Routes = [
 	{
 		path: '',
 		component: BaseComponent,
-		canActivate: [IsAuthenticatedGuard]
+		canActivate: [IsAuthenticatedGuard],
+		children: [
+			{
+				path: '', component: HomeComponent
+			},
+		]
 	},
 	{
 		path: 'login',
