@@ -26,6 +26,8 @@ import { UserService,
 // guards
 import { IsAuthenticatedGuard } from './services';
 
+// pipes
+import { ShortenNumberPipe } from './pipes'
 
 // components
 import { LoadingComponent } from './content/loading/loading.component';
@@ -41,6 +43,10 @@ import { PostComponent } from './content/post/post.component';
 
 @NgModule({
 	declarations: [
+		// pipes
+		ShortenNumberPipe,
+
+		// components
 		AppComponent,
 		LoadingComponent,
 		LoginComponent,

@@ -29,13 +29,13 @@
 			<div class="like" [class.voted]="post.voted && post.voted.type === 'up'">
 				<a (click)="upVote()">
 					<i class="fa" [class.fa-thumbs-up]="post.voted && post.voted.type === 'up'" [class.fa-thumbs-o-up]="!post.voted || post.voted.type !== 'up'"></i>
-					{{ post.upVotes.length }}
+					{{ post.upVotes.length | shorten }}
 				</a>
 			</div>
 			<div class="dislike" [class.voted]="post.voted && post.voted.type === 'down'">
 				<a (click)="downVote()">
 					<i class="fa" [class.fa-thumbs-down]="post.voted && post.voted.type === 'down'" [class.fa-thumbs-o-down]="!post.voted || post.voted.type !== 'down'"></i>
-					{{ post.downVotes.length }}
+					{{ post.downVotes.length | shorten }}
 				</a>
 			</div>
 		</div>

@@ -23,11 +23,11 @@
                             <div class="drop-down">
                                 <div class="counters-line">
                                     <div class="half">
-                                    	<span class="counter">{{ kudos }}</span>
+                                    	<span class="counter">{{ kudos | shorten }}</span>
                                     	<span class="desc">{{ kudos == 1 ? 'kudo' : 'kudos' }}</span>
                                     </div>
                                     <div class="half">
-                                    	<span class="counter">{{ user.posts ? user.posts.length : 0 }}</span>
+                                    	<span class="counter">{{ (user.posts ? user.posts.length : 0) | shorten }}</span>
                                     	<span class="desc">{{ user.posts ? (user.posts.length > 1 ? 'leaks' : 'leak') : 'leaks' }}</span>
                                     </div>
                                 </div>
