@@ -6,6 +6,10 @@
   "options": {
     "validateUpsert": true
   },
+  "mixins": {
+      "Timestamp": true,
+      "Softdelete": true
+  },
   "properties": {
     "type": {
       "type": "string",
