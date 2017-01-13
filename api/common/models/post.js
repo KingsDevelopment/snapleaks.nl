@@ -2,12 +2,12 @@
 var lb = require('loopback');
 
 module.exports = function(Post) {
-  let Vote = loopback.models.Vote;
 
   Post.observe('after save', (ctx, next) => {
     if (ctx.instance) {
       var data = ctx.instance;
 
+      let Vote = loopback.models.Vote;
       Vote.create({
         ownerId: data.ownerId,
         postId: data.id
