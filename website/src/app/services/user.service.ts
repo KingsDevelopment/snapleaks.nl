@@ -97,4 +97,8 @@ export class UserService {
 		return Observable.fromPromise(promise);
 	}
 
+	posts() {
+		return this._userApi.getPosts(this.user.id, { include: ['votes'] });
+	}
+
 }

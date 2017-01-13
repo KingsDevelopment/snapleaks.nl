@@ -57,6 +57,16 @@
             "type": "hasMany",
             "model": "RoleMapping",
             "foreignKey": "principalId"
+        },
+        "posts": {
+          "type": "hasMany",
+          "model": "Post",
+          "foreignKey": "ownerId"
+        },
+        "votes": {
+          "type": "hasMany",
+          "model": "Vote",
+          "foreignKey": "ownerId"
         }
     },
     "acls": [{
@@ -121,18 +131,18 @@
         "permission": "ALLOW",
         "property": [
             "__get__roles",
+            "__get__votes",
+            "__create__votes",
+            "__get__posts",
+            "__create__posts",
+            "__updateById__votes",
+            "__updateById__posts",
             "__updateById__identities"
         ]
     }, {
         "accessType": "EXECUTE",
         "principalType": "ROLE",
         "principalId": "S-Class",
-        "permission": "ALLOW",
-        "property": "*"
-    }, {
-        "accessType": "EXECUTE",
-        "principalType": "ROLE",
-        "principalId": "A-Class",
         "permission": "ALLOW",
         "property": "*"
     }],

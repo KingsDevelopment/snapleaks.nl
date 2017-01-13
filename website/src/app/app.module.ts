@@ -20,7 +20,8 @@ import { MasonryModule } from 'angular2-masonry';
 // services
 import { UserService,
 		ValidationService,
-		LogService } from './services';
+		LogService,
+		PostService } from './services';
 
 // guards
 import { IsAuthenticatedGuard } from './services';
@@ -35,6 +36,8 @@ import { HeaderComponent } from './content/header/header.component';
 import { FooterComponent } from './content/footer/footer.component';
 import { SidebarComponent } from './content/sidebar/sidebar.component';
 import { HomeComponent } from './content/home/home.component';
+import { PostsComponent } from './content/posts/posts.component';
+import { PostComponent } from './content/post/post.component';
 
 @NgModule({
 	declarations: [
@@ -46,7 +49,9 @@ import { HomeComponent } from './content/home/home.component';
 		HeaderComponent,
 		FooterComponent,
 		SidebarComponent,
-		HomeComponent
+		HomeComponent,
+		PostsComponent,
+		PostComponent
 	],
 	imports: [
 		// sdk
@@ -75,6 +80,7 @@ import { HomeComponent } from './content/home/home.component';
 		UserService,
 		ValidationService,
 		LogService,
+		PostService,
 
 		// guards
 		IsAuthenticatedGuard

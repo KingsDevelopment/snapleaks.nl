@@ -135,8 +135,6 @@ export class ValidationService {
         var val;
         var valid = true;
 
-        console.log(g);
-
         for (let name in g.controls) {
             if (val === undefined) {
                 val = g.controls[name].value

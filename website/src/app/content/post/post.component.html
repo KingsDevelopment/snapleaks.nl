@@ -1,0 +1,41 @@
+<div class="article" *ngIf="post && isFormatted">
+	<h1>
+		<a href="post.html">{{ post.title }}</a>
+	</h1>
+	<div class="article-content">
+		<figure>
+			<div class="corner-tag green" *ngFor="let tag of post.tags">
+				<a href="#">{{ tag }}</a>
+			</div>
+			<img [src]="post.image"/>
+		</figure>
+	</div>
+	<hr />
+	<div class="counters-line">
+		<div class="pull-left">
+			<div class="date">
+				<i class="fa fa-calendar-o"></i>
+				{{ post.created | date:'d MMM' }}
+			</div>
+			<div class="user">
+				<i class="fa fa-user"></i>
+				<a href="#">{{ post.owner.username }}</a>
+			</div>
+			<!-- <div class="comments"><i class="icon-comments"></i> <a href="post.html">320</a></div> -->
+		</div>
+		<div class="pull-right">
+			<div class="like" [class.voted]="post.voted && post.voted.type === 'up'">
+				<a (click)="upVote()">
+					<i class="fa" [class.fa-thumbs-up]="post.voted && post.voted.type === 'up'" [class.fa-thumbs-o-up]="!post.voted || post.voted.type !== 'up'"></i>
+					{{ post.upVotes.length }}
+				</a>
+			</div>
+			<div class="dislike" [class.voted]="post.voted && post.voted.type === 'down'">
+				<a (click)="downVote()">
+					<i class="fa" [class.fa-thumbs-down]="post.voted && post.voted.type === 'down'" [class.fa-thumbs-o-down]="!post.voted || post.voted.type !== 'down'"></i>
+					{{ post.downVotes.length }}
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

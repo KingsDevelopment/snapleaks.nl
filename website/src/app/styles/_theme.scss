@@ -866,32 +866,14 @@ aside .widget:first-child {
 			vertical-align: middle;
 		}
 
-		i {
-			margin-top: -2px;
-			width: 18px;
-			height: 15px;
-			display: inline-block;
-			vertical-align: middle;
-			background: url('/assets/images/post-icons.png') no-repeat;
 
-			&.icon-date {
-				background-position: center 0px;
-			}
+		.like, .dislike {
+			cursor: pointer;
 
-			&.icon-user {
-				background-position: center -15px;
-			}
-
-			&.icon-comments {
-				background-position: center -30px;
-			}
-
-			&.icon-like {
-				background-position: center -45px;
-			}
-
-			&.icon-dislike {
-				background-position: center -60px;
+			&.voted {
+				a {
+					color: #7F46DD;
+				}
 			}
 		}
 	}

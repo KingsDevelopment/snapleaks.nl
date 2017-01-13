@@ -35,5 +35,13 @@
   "PasswordReset": {
     "dataSource": "db",
     "public": true
+  },
+  "Post": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Vote": {
+    "dataSource": "db",
+    "public": true
   }
 }

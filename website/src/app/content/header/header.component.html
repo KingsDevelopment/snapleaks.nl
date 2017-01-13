@@ -1,4 +1,4 @@
-<header>
+<header #header>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -22,23 +22,29 @@
                             </div>
                             <div class="drop-down">
                                 <div class="counters-line">
-                                    <div class="half"><span class="counter">321k</span><span class="desc">kudos</span></div>
-                                    <div class="half"><span class="counter">42</span><span class="desc">leaks</span></div>
+                                    <div class="half">
+                                    	<span class="counter">{{ kudos }}</span>
+                                    	<span class="desc">{{ kudos == 1 ? 'kudo' : 'kudos' }}</span>
+                                    </div>
+                                    <div class="half">
+                                    	<span class="counter">{{ user.posts ? user.posts.length : 0 }}</span>
+                                    	<span class="desc">{{ user.posts ? (user.posts.length > 1 ? 'leaks' : 'leak') : 'leaks' }}</span>
+                                    </div>
                                 </div>
                                 <div class="buttons-line">
-                                    <a href="#" class="btn btn-primary btn-block custom-button">
+                                    <a href="#" class="btn btn-primary btn-block custom-button disabled">
                                     	<span class="fa fa-upload"></span>
                                     	Upload Leak
                                     </a>
-                                    <a href="#" class="btn btn-primary btn-block custom-button">
+                                    <a href="#" class="btn btn-primary btn-block custom-button disabled">
                                     	<span class="fa fa-star"></span>
                                     	Favorieten
                                     </a>
-                                    <a href="settings.html" class="btn btn-primary btn-block custom-button">
+                                    <a href="settings.html" class="btn btn-primary btn-block custom-button disabled">
                                     	<span class="fa fa-cog"></span>
                                     	Profiel &amp; Instellingen
                                     </a>
-                                    <a routerLink="/logout" class="btn btn-primary btn-block custom-button">
+                                    <a routerLink="/logout" class="btn btn-primary btn-block custom-button disabled">
                                     	<span class="fa fa-sign-out"></span>
                                     	Uitloggen
                                     </a>
