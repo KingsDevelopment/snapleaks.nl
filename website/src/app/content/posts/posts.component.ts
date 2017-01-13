@@ -1,10 +1,13 @@
-import { Component, ViewEncapsulation, Input, HostListener, OnInit, OnDestroy } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild, Input, HostListener, OnInit, OnDestroy } from '@angular/core';
 
 // services
 import { PostService } from '../../services';
+import { Post } from '../../sdk/models';
 
 // dependencies
 import * as _ from 'lodash';
+import * as moment from 'moment';
+import { AngularMasonry } from 'angular2-masonry';
 
 @Component({
 	selector: 'posts',
@@ -16,6 +19,9 @@ export class PostsComponent implements OnInit, OnDestroy {
 	public isLoading = false;
 	public empty = false;
 
+	private layoutInterval;
+
+	@ViewChild('masonry') masonry:AngularMasonry;
 	@Input() where = {};
 
 	constructor(private _post:PostService) {}
@@ -27,12 +33,23 @@ export class PostsComponent implements OnInit, OnDestroy {
 				this.posts = posts;
 			}
 			else {
-				_.concat(this.posts, posts);
+				this.posts = _.concat(this.posts, posts);
 			}
 		});
+
+		this.layoutInterval = setInterval(() => {
+			if(this.masonry) {
+				this.masonry.layout();
+			}
+		}, 1000);
 	}
 
 	ngOnDestroy() {
+		if(this.layoutInterval) {
+			clearInterval(this.layoutInterval);
+		}
+
+		this.layoutInterval = null;
 		this.posts = null;
 	}
 
@@ -57,7 +74,7 @@ export class PostsComponent implements OnInit, OnDestroy {
 					this.empty = true;
 				}
 
-				_.concat(this.posts, posts);
+				this.posts = _.concat(this.posts, posts);
 				this.isLoading = false;
 			});
 		}

@@ -83,20 +83,4 @@ module.exports = (Model, options) => {
 		}
 		return _update.call(Model, whereNotDeleted, ...rest);
 	};
-
-
-	Model.observe('before save', (ctx, next) => {
-		Model.defineProperty('deleted', {type: Date, default: null});
-		if (ctx.instance) {
-			if(!ctx.instance.hasOwnProperty('deleted')) {
-				ctx.instance.deleted = null;
-			}
-		} else {
-			if(!ctx.data.hasOwnProperty('deleted')) {
-				ctx.data.deleted = null;
-			}
-		}
-
-		next();
-	});
 }

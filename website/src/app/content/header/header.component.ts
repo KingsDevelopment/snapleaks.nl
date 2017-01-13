@@ -43,7 +43,6 @@ export class HeaderComponent implements OnInit{
 
 				_.each(this.user.posts, post => {
 					let upVotes = _.filter(post.votes, {type: 'up'});
-					console.log(upVotes);
 					this.kudos += upVotes.length;
 				});
 			}, err => this._log.error(err));

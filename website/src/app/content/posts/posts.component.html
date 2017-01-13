@@ -1,5 +1,5 @@
 <loading [fullWidth]="true" *ngIf="!posts"></loading>
-<masonry class="main-wrap layout-masonry" *ngIf="posts">
+<masonry #masonry class="main-wrap layout-masonry" *ngIf="posts">
 	<masonry-brick class="main-post" *ngFor="let post of posts">
 		<post [post]="post"></post>
 	</masonry-brick>

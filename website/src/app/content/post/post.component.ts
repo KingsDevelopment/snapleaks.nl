@@ -39,9 +39,6 @@ export class PostComponent {
 		post.upVotes = _.filter(post.votes, {type: 'up'});
 		post.downVotes = _.filter(post.votes, {type: 'down'});
 
-		post.created = moment(post.created);
-		post.updated = moment(post.created);
-
 		post.owner = {
 			id: post.owner.id,
 			username: post.owner.username

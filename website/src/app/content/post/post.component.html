@@ -4,8 +4,10 @@
 	</h1>
 	<div class="article-content">
 		<figure>
-			<div class="corner-tag green" *ngFor="let tag of post.tags">
-				<a href="#">{{ tag }}</a>
+			<div class="corner-tags">
+				<div class="corner-tag green" *ngFor="let tag of post.tags">
+					<a href="#">{{ tag }}</a>
+				</div>
 			</div>
 			<img [src]="post.image"/>
 		</figure>
