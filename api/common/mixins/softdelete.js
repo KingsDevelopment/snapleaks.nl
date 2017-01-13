@@ -32,7 +32,7 @@ module.exports = (Model, options) => {
 	Model.prototype.delete = Model.prototype.destroy;
 
 	// Emulate default scope but with more flexibility.
-	const queryNonDeleted = {'deleted': null};
+  const queryNonDeleted = { or: [{'deleted': null}, {'deleted': { exists: false }}] };
 
 	const _findOrCreate = Model.findOrCreate;
 	Model.findOrCreate = (query = {}, ...rest) => {
