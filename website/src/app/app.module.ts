@@ -16,6 +16,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
 import { MomentModule } from 'angular2-moment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MasonryModule } from 'angular2-masonry';
+import { TagInputModule } from 'ng2-tag-input';
 
 // services
 import { UserService,
@@ -34,6 +35,7 @@ import { LoadingComponent } from './content/loading/loading.component';
 import { LoginComponent } from './content/login/login.component';
 import { LogoutComponent } from './content/logout/logout.component';
 import { BaseComponent } from './content/base/base.component';
+import { UploadComponent } from './content/upload/upload.component';
 import { HeaderComponent } from './content/header/header.component';
 import { FooterComponent } from './content/footer/footer.component';
 import { SidebarComponent } from './content/sidebar/sidebar.component';
@@ -42,6 +44,9 @@ import { PostsComponent } from './content/posts/posts.component';
 import { PostComponent } from './content/post/post.component';
 
 @NgModule({
+	entryComponents: [
+		UploadComponent
+	],
 	declarations: [
 		// pipes
 		ShortenNumberPipe,
@@ -52,6 +57,7 @@ import { PostComponent } from './content/post/post.component';
 		LoginComponent,
 		LogoutComponent,
 		BaseComponent,
+		UploadComponent,
 		HeaderComponent,
 		FooterComponent,
 		SidebarComponent,
@@ -73,10 +79,10 @@ import { PostComponent } from './content/post/post.component';
 
 		// dependencies
 		NgbModule.forRoot(),
-		SimpleNotificationsModule,
+		SimpleNotificationsModule.forRoot(),
 		MomentModule,
-		NgbModule.forRoot(),
 		MasonryModule,
+		// TagInputModule,
 
 		// additional routes, load in last. (Inccludes 404 for any additional weird page)
 		RouterModule.forRoot(AppRoutes)

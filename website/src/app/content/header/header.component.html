@@ -15,6 +15,15 @@
                         </a>
                     </div>
                     <div class="right-container" *ngIf="user">
+                    	<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    		<ul class="nav navbar-nav">
+	                            <li>
+	                            	<a (click)="openUploadModal()">
+	                            		<span class="fa fa-upload"></span> Upload leak
+                            		</a>
+                            	</li>
+	                        </ul>
+	                    </div> -->
                         <div class="user-box">
                             <div class="user">
                                 <span class="name">{{ user.username }}</span>
@@ -32,10 +41,6 @@
                                     </div>
                                 </div>
                                 <div class="buttons-line">
-                                    <a href="#" class="btn btn-primary btn-block custom-button disabled">
-                                    	<span class="fa fa-upload"></span>
-                                    	Upload Leak
-                                    </a>
                                     <a href="#" class="btn btn-primary btn-block custom-button disabled">
                                     	<span class="fa fa-star"></span>
                                     	Favorieten

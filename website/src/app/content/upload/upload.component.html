@@ -1,0 +1,32 @@
+<div class="modal-content">
+	<div class="modal-body">
+		<div class="post-window">
+			<div class="window-left">
+				<textarea class="form-control" rows="3" placeholder="Post title"></textarea>
+				<div class="upload-wrap">
+					 <span class="btn btn-success fileinput-button">
+						 <span class="purple">BROWSE IMAGE</span><br />
+						 <span>PNG, GIF or JPG accepted. <br /> Max Size is 5MB.</span>
+						<!-- The file input field used as target for the file upload widget -->
+						<input class="fileupload-init" type="file" name="files[]" rel="files-photos">
+					</span>
+					<div id="files-photos" class="files"></div>
+				</div>
+			</div>
+			<aside>
+				<div class="tags-wrap">
+					<h3>Tags:</h3>
+					<!-- <tag-input [(ngModel)]='items' [editable]='true' (onTagEdited)="onTagEdited($event)"></tag-input> -->
+				</div>
+			</aside>
+		</div>
+		<div class="modal-bottom-menu">
+			<div class="half">
+				<button class="btn btn-link btn-block">Post It / Upload</button>
+			</div>
+			<div class="half">
+				<button class="btn btn-link btn-block alternate-btn">Preview</button>
+			</div>
+		</div>
+	</div>
+</div>

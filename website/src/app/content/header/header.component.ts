@@ -8,6 +8,10 @@ import { User, Post } from '../../sdk/models';
 
 // dependencies
 import * as _ from 'lodash';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+// components
+import { UploadComponent } from '../upload/upload.component';
 
 @Component({
 	selector: 'base-header',
@@ -20,7 +24,7 @@ export class HeaderComponent implements OnInit{
 
 	@ViewChild('header') header:ElementRef;
 
-	constructor(private _user:UserService, private _log:LogService) {}
+	constructor(private _user:UserService, private _log:LogService, private _modal:NgbModal) {}
 
 	ngOnInit() {
 		this.user = this._user.user;
@@ -47,5 +51,10 @@ export class HeaderComponent implements OnInit{
 				});
 			}, err => this._log.error(err));
 		}
+	}
+
+	openUploadModal() {
+		let uploadModal = this._modal.open(UploadComponent);
+		// modalRef.componentInstance.name = 'World';
 	}
 }
