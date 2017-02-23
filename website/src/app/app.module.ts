@@ -16,7 +16,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
 import { MomentModule } from 'angular2-moment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MasonryModule } from 'angular2-masonry';
-import { TagInputModule } from 'ng2-tag-input';
+// import { TagInputModule } from 'ng2-tag-input';
 
 // services
 import { UserService,
