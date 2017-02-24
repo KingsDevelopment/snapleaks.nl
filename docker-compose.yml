@@ -46,8 +46,8 @@ services:
   mongodb:
     image: tutum/mongodb:3.2
     ports:
-      - "27017:27017"
-      - "28017"
+      - "${MONGODB_PORT}:27017"
+      - "${MONGODB_SERVER_PORT}:28017"
     env_file: 
       - .env
     environment:
